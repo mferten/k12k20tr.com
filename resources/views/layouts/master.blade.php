@@ -22,7 +22,7 @@
         <script src="js/defaultStartupRegionValuesVersion011.js"></script>
         <script src="js/menuPageSetupVersion011.js"></script>
         <script src="js/navigationVersion010.js"></script>
-        <script src="js/addEventVersion010.js"></script>
+        <script src="js/addEventVersion011.js"></script>
         <script src="js/flagsSVGFilesVersion010.js"></script>
         <script src="js/countriesFeaturesVersion010.js"></script>
     </head>

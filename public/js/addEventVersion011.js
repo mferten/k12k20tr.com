@@ -123,7 +123,20 @@ function addChangeEvents(event)
         if (selectionName == "region") {
             processRegionPlus(selectionValue, true);
         } else if (selectionId == "appLanguageToUse" && selectionValue != "ChooseOne") { /* Application Language Selection */
-            window.open(applicationHrefs[document.getElementById("appLanguageToUse").value.substring(22)], "_self");            
+            if (window.location.hostname.toUpperCase() == "K12K20.LOC") {
+                setApplicationLanguage(document.getElementById("appLanguageToUse").value.substring(22), true); // Change the Web Page Text Language
+                applicationTextLanguageSelectedIndex = (document.getElementById("appLanguageToUse").value.substring(22)-1);
+                // For the Language Pages: Take care of the second id_ChooseOne (double)
+                if (currentEWorldPage == "Text Languages" || currentEWorldPage == "Data Languages") {
+                    setTimeout(function() {
+                        document.getElementById("appLanguage").options[0].innerHTML = selectedApplicationLanguageTexts["id_ChooseOne"];
+                        if (document.getElementById("appCountry"))
+                            document.getElementById("appCountry").options[0].innerHTML = selectedApplicationLanguageTexts["id_ChooseOne"];
+                        if (document.getElementById("appLanguageToUseB"))
+                            document.getElementById("appLanguageToUseB").options[0].innerHTML = selectedApplicationLanguageTexts["id_ChooseOne"];
+                    },300);
+                }
+            } else window.open(applicationHrefs[document.getElementById("appLanguageToUse").value.substring(22)], "_self");
         } else if (selectionId == "id_CheckBoxPlaySounds") { // Sound Off
             playSoundsChanged();
         } else if (selectionId == "Country") { // a Country/Entity
@@ -451,11 +464,6 @@ function clickEvents(event)
             if (lastUsedFilter != "") chooseAndProcessSelections();
         }
     }
-}
-
-function touchEvents(event) { alert.log(event.targetTouches[0].target);
-    var eventTargetId = event.targetTouches[0].target.id;
-    if (initialMenuItems[eventTargetId] && appleProduct) { initialMenuItems[eventTargetId](eventTargetId); } // OK when it is Startup...
 }
 
 function handleSearchDD()
