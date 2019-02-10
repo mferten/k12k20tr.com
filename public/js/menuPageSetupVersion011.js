@@ -121,7 +121,7 @@ function importAnExternalJSFileIfNotYetWithNoProcessing(jsFileName, jsURL)
                     finalizeRegionalPage();
                 }, 50);
             }
-            else if (currentEWorldPage == "Menu" && jsFileName == 'worldFlags') {
+            else if (currentEWorldPage == "Menu" && jsFileName == 'WorldFlags') {
                 setTimeout(function() {
                     finalizeMenuPage();
                 }, 50);
