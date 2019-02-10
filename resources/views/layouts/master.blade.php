@@ -19,8 +19,8 @@
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/cssStyleVersion010.css">
-        <script src="js/defaultStartupRegionValuesVersion010.js"></script>
-        <script src="js/menuPageSetupVersion010.js"></script>
+        <script src="js/defaultStartupRegionValuesVersion011.js"></script>
+        <script src="js/menuPageSetupVersion011.js"></script>
         <script src="js/navigationVersion010.js"></script>
         <script src="js/addEventVersion010.js"></script>
         <script src="js/flagsSVGFilesVersion010.js"></script>
