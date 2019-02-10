@@ -121,10 +121,10 @@ function importAnExternalJSFileIfNotYetWithNoProcessing(jsFileName, jsURL)
                     finalizeRegionalPage();
                 }, 50);
             }
-            else if (currentEWorldPage == "Menu" && jsFileName == 'UtilityForFlag') {
+            else if (currentEWorldPage == "Menu" && jsFileName == 'worldFlags') {
                 setTimeout(function() {
                     finalizeMenuPage();
-                }, 100);
+                }, 50);
             }
         }
         document.head.appendChild(externalJavaScript);

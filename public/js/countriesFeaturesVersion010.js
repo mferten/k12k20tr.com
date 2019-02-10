@@ -6267,7 +6267,7 @@ var featuresOfAllCountries =
 						{ "value":"Moon", "feature":"Shape", "comment":""},
 						{ "value":"Crescent", "feature":"Shape", "comment":""},
 						{ "value":"Star", "feature":"Shape", "comment":""},
-						{ "value":"Forteen-Points Star", "feature":"Shape", "comment":""},
+						{ "value":"Fourteen-Points Star", "feature":"Shape", "comment":""},
 						{ "value":"Stripe", "feature":"Shape", "comment":""},
 						{ "value":"Horizontal", "feature":"Shape", "comment":""}
 				],
@@ -8724,7 +8724,7 @@ var featuresOfAllCountries =
 						{ "value":"Christianity", "feature":"Religion", "comment":""},
 						{ "value":"", "feature":"SexRatio", "comment":""},
 						{ "value":"", "feature":"SeatRatio", "comment":""},
-						{ "value":"NorthAmerica", "feature":"Region", "comment":""},
+						{ "value":"North America", "feature":"Region", "comment":""},
 						{ "value":0, "feature":"Cell", "comment":""},
 						{ "value":0, "feature":"Internet", "comment":""},
 						{ "value":0, "feature":"RandD", "comment":""},
@@ -9766,7 +9766,7 @@ var featuresOfAllCountries =
 						{ "value":"Sesotho", "feature":"Language", "comment":""},
 
 						{ "value":"Atlantic", "feature":"Water", "comment":"Ocean"},
-						{ "value":"Indian Oceans", "feature":"Water", "comment":"Ocean"},
+						{ "value":"Indian Ocean", "feature":"Water", "comment":"Ocean"},
 						{ "value":"Unaffiliated", "feature":"Religion", "comment":""},
 						{ "value":"Christianity", "feature":"Religion", "comment":""},
 
