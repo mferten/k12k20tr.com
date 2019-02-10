@@ -124,7 +124,7 @@ function importAnExternalJSFileIfNotYetWithNoProcessing(jsFileName, jsURL)
             else if (currentEWorldPage == "Menu" && jsFileName == 'UtilityForFlag') {
                 setTimeout(function() {
                     finalizeMenuPage();
-                }, 50);
+                }, 100);
             }
         }
         document.head.appendChild(externalJavaScript);
