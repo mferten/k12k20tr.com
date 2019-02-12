@@ -7,7 +7,6 @@ var DEFAULTREGION = "Europe";
 //  Keep Adding new Application Languages (both Text and Data)
 var selectedApplicationLanguageName = {"English (US)":["İngilizce", "UnitedStatesofAmerica", "http://www.k12k20.com"],
     "Turkish":["Türkçe", "Turkey", "http://www.k12k20tr.com"], "Slovak":["Slovakça", "Slovakia", "http://www.k12k20sk.com"]};
-// var selectedApplicationLanguageData = {"English":"Anglický", "Turkish":"Turecký", "Slovak":"Slovenský, ...."};
 
 // DEFAULT REGION Application Start UP Values which will be used to load into Local Storage Area
 // console.log(encodeURIComponent(JSON.stringify(selectedApplicationLanguageTexts))) and encodeURIComponent(JSON.stringify(languageOfCountries)
