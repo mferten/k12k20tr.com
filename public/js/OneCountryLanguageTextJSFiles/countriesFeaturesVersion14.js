@@ -9741,7 +9741,7 @@ var featuresOfAllCountries =
 						{ "value":"0.666 medium", "feature":"HDI", "comment":""},
 						{ "value":"Pretoria, Bloemfontein and Cape Town", "feature":"CapitalCitiesDisplay", "comment":"https://en.wikipedia.org/wiki/Pretoria"},
 						{ "value":"isiZulu, Afrikaans, English, Sepedi, Setswana and Sesotho...", "feature":"LanguageDisplay", "comment":""},
-						{ "value":"Atlantic and Indian Oceans", "feature":"WaterDisplay", "comment":""},
+						{ "value":"Atlantic and Indian Ocean", "feature":"WaterDisplay", "comment":""},
 						{ "value":"Christianity and Unaffiliated", "feature":"ReligionsDisplay", "comment":""},
 						{ "value":"96.4", "feature":"SexRatio", "comment":""},
 						{ "value":"42.2", "feature":"SeatRatio", "comment":""},
@@ -9766,7 +9766,7 @@ var featuresOfAllCountries =
 						{ "value":"Sesotho", "feature":"Language", "comment":""},
 
 						{ "value":"Atlantic", "feature":"Water", "comment":"Ocean"},
-						{ "value":"Indian Ocean", "feature":"Water", "comment":"Ocean"},
+						{ "value":"Indian Oceans", "feature":"Water", "comment":"Ocean"},
 						{ "value":"Unaffiliated", "feature":"Religion", "comment":""},
 						{ "value":"Christianity", "feature":"Religion", "comment":""},
 

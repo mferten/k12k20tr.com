@@ -3,16 +3,16 @@
 
 var currentEWorldPage = "Menu"; // this should be up here all the time to work again from the menu (after the first time)
 
-importAnExternalJSFileIfNotYetWithNoProcessing("UtilityForAll", "js/utilityForAllVersion011.js");
-importAnExternalJSFileIfNotYetWithNoProcessing("UtilityForFlag", "js/utilityForFlagsVersion010.js");
-importAnExternalJSFileIfNotYetWithNoProcessing("WorldFlags", "js/worldFlags.js");
+importAnExternalJSFileIfNotYetWithNoProcessing("UtilityForAll", "js/utilityForAllVersion14.js");
+importAnExternalJSFileIfNotYetWithNoProcessing("UtilityForFlag", "js/utilityForFlagsVersion14.js");
+importAnExternalJSFileIfNotYetWithNoProcessing("WorldFlags", "js/OneCountryLanguageTextJSFiles/worldFlags.js");
 
 function finalizeMenuPage() {
     initializationUtilityForAll(); // get the initial application values (default or saved)
 
     var startupProgram = startupValuesJSONObject.startWith;
     if (startupProgram && startupProgram == "id_MenuStart") {
-        setMenuImage();
+        setMenuImage(true);
     }
     else {
         if (initialMenuItems[startupProgram]) {
@@ -25,7 +25,8 @@ function finalizeMenuPage() {
     }
 }
 
-function setMenuImage() {
+function setMenuImage(firstTime) {
+    if (firstTime) {} else initializationUtilityForAll();
     var menuBody = document.createElement("body");
     menuBody.setAttribute("name","menu");
     var menuHeader = document.createElement("header");
@@ -71,11 +72,6 @@ function setMenuImage() {
     else
         document.getElementById("topHTML").appendChild(menuBody);
     setNavFooterTags("menu", true);
-    // Application Language Drop Down (Select/Options)
-    setTimeout(function () {
-        setApplicationLanguageDropDownBox("appLanguageToUse", JSON.parse(applicationLanguageDropDownValues));
-        document.getElementById("appLanguageToUse").options[applicationTextLanguageSelectedIndex].selected = true;
-    }, 550);
 }
 
 function importAnExternalJSFileIfNotYetWithNoProcessing(jsFileName, jsURL)

@@ -6,15 +6,12 @@ dashBoardFlag = true;
 removeAnExternalJSFileIfExist("Mapdata"); // only conflicting JS file with other Mapdata
 // retrieve the external js files if not open yet
 setTimeout(function () {
-    importAnExternalJSFileIfNotYetWithNoProcessing("StaticDataForDashboard", "js/staticDataForDashboard.js");
-    // importAnExternalJSFileIfNotYetWithNoProcessing("WorldFlags", "js/worldFlags.js"); Menu Page loaded this to lessen the load
     importAnExternalJSFileIfNotYetWithNoProcessing("DashBoardmapdata", "js/dashBoardmapdata.js");
     importAnExternalJSFileIfNotYetWithNoProcessing("Worldmap", "js/worldmap.js");
 
     initializationUtilityForFlags();
 }, 50);
 
-var allCountryLanguages;
 // World Languages Drop Down Values
 if (typeof worldLanguagesDropDownValues == 'undefined') // text or data lanageues.js may define this variable
     var worldLanguagesDropDownValues;
@@ -42,7 +39,7 @@ var selectTextSpan = getASpanElement("", myUndefined, " ");
 // These will be multiple selection drop down Category Select fields:
 createSelectFields(selectTextSpan, ["Country", "Population", "LandArea", "Language", "Religion", "Reports"],
     "selectBoxStyles marginPointPoint2Rem worldSelectSize");
-createSelectFields(selectTextSpan, ["appLanguageToUse"],"selectBoxStyles marginPointPoint2Rem worldSelectSize");
+addApplicationLanguageSelectionDropDownBox(selectTextSpan);
 firstDivElement.appendChild(selectTextSpan);
 
 var flags = document.createElement("div");
@@ -79,7 +76,6 @@ setTimeout(function () {
         allCountryNames = getAllCountriesNames();
     if (typeof allCountryFullNames == 'undefined') // text or data lanageues.js may define this variable
         allCountryFullNames = getAllCountriesFullNames();
-    allCountryLanguages = allLanguages; // for dashBoard: Each Country's First (major) Language
     // World Languages Drop Down Values
     worldLanguagesDropDownValues = getWorldLanguagesDropDownValues();
     // World Religions Drop Down Values

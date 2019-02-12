@@ -140,12 +140,6 @@ setTimeout(function () {
     getUsaApplicationLanguageTexts();
 }, 250);
 
-// Application Language Drop Down (Select/Options)
-setTimeout(function () {
-    setApplicationLanguageDropDownBox("appLanguageToUse", JSON.parse(applicationLanguageDropDownValues));
-    document.getElementById("appLanguageToUse").selectedIndex = applicationTextLanguageSelectedIndex;
-}, 350);
-
 function clickedSaveButton(event)
 {
     // Validate the data: At least One Tag must have a Text

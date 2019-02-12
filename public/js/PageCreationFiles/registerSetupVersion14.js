@@ -1,9 +1,11 @@
 'use strict';
 
-importAnExternalJSFileIfNotYetWithNoProcessing("StaticDataForRegion", "js/staticDataForRegion.js");
+importAnExternalJSFileIfNotYetWithNoProcessing("StaticDataForRegion", "js/OneCountryLanguageTextJSFiles/staticDataForRegion.js");
 
 currentEWorldPage = "Startup";
 dashBoardFlag = false;
+
+initializationUtilityForAll();
 
 var registerBody =  document.createElement("body");
 registerBody.setAttribute("name","register");
@@ -36,7 +38,9 @@ var registerLabel =  document.createElement("label");
 registerLabel.setAttribute("for", "appLanguageToUseB");
 var registerSelect =  document.createElement("select");
 registerSelect.setAttribute("id", "appLanguageToUseB");
-registerSelect.setAttribute("disabled", true);
+if (window.location.hostname.toUpperCase() != "K12K20.LOC") {
+    registerSelect.setAttribute("disabled", true);
+}
 registerSelect.setAttribute("class", "selectBoxStyles applicationLanguageRegister");
 registerLabel.appendChild(getASpanElement("id_AppLanguageToUseB", myUndefined,selectedApplicationLanguageTexts["id_AppLanguageToUseB"]));
 registerLabel.appendChild(registerSelect);
@@ -96,7 +100,6 @@ registerForm.appendChild(personFieldset);
 flagOfCountries = startupValuesJSONObject.flagOfCountries; // incase Global was activated priorily
 flagOfCountriesFullName = startupValuesJSONObject.flagOfCountriesFullName; // incase Global was activated priorily
 setTimeout(function() {
-    setCombineValueCodes();
     registerMain.appendChild(registerForm);
     // Registration Button
     var saveTextSpan = getASpanElement("id_Save","appleIOSTop",selectedApplicationLanguageTexts["id_Save"]);
@@ -132,7 +135,7 @@ setTimeout(function() {
     registerBody.appendChild(registerFooter);
     document.getElementById("topHTML").replaceChild(registerBody, document.body);
     setNavFooterTags("Register");
-    // start "js/addStartupValues.js"
+
     setStartupValues(startupValuesJSONObject);
     // set the Application Texts
     document.getElementById("id_SaveStartupValues").addEventListener("click", function(event) { // Save the Startup Values into Local Storage
@@ -142,19 +145,6 @@ setTimeout(function() {
     document.getElementById("id_RadioCombineReverseSearch").addEventListener("click", function(event) { processReverseRadioInput(event); }, false);
     setTheSelectedRegion(startupValuesJSONObject.region);
 }, 250);
-
-setTimeout(function () {
-    // Application Language retrieved by Ajax
-    if (applicationLanguageDropDownValues)
-        setApplicationLanguageDropDownBox("appLanguageToUseB", JSON.parse(applicationLanguageDropDownValues));
-        document.getElementById("appLanguageToUseB").selectedIndex = (startupValuesJSONObject.language.substring(22)-1);
-}, 300);
-
-// Application Language Drop Down (Select/Options)
-setTimeout(function () {
-    setApplicationLanguageDropDownBox("appLanguageToUse", JSON.parse(applicationLanguageDropDownValues));
-    document.getElementById("appLanguageToUse").options[applicationTextLanguageSelectedIndex].selected = "selected";
-}, 350);
 
 // Save the Startup Configuration into the Local Storage
 function saveStartupValues(startupValuesJSONObject)
@@ -233,20 +223,6 @@ function changeStartupEvents(event)
     {
         processRegion(eventId, false); // id not value
         setTheSelectedRegion(eventId); // mark it selected
-    }
-    // a language selected retrieve and save the Applicaiton Texts
-    else if (eventId == 'appLanguageToUse' || eventId == 'appLanguageToUseB')
-    {
-        if (eventId == 'appLanguageToUse') {
-            var languageId = document.getElementById("appLanguageToUse").value.substring(22); // 1, 2, 3 but starts with 0..
-            // utilityForAll has selectedApplicationLanguageTexts as global value
-            window.open(applicationHrefs[languageId], "_self");
-        }
-        else {
-            var languageId = document.getElementById("appLanguageToUseB").value.substring(22); // 1, 2, 3 but starts with 0..
-            setApplicationLanguage(languageId, false);
-        }
-        event.preventDefault(); // do not attempt to submit the form
     }
     // If Pause/Play Icon clicked:
     else if (eventId == 'id_CheckBoxPlaySounds')

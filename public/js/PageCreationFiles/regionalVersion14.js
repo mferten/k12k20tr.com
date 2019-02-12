@@ -6,15 +6,15 @@ dashBoardFlag = false;
 removeAnExternalJSFileIfExist("DashBoardmapdata");
 // retrieve the external js files if not open yet
 setTimeout(function () {
-    importAnExternalJSFileIfNotYetWithNoProcessing("AfricaFlags", "js/africaFlags.js");
-    importAnExternalJSFileIfNotYetWithNoProcessing("AsiaFlags", "js/asiaFlags.js");
-    importAnExternalJSFileIfNotYetWithNoProcessing("EuropeFlags", "js/europeFlags.js");
-    importAnExternalJSFileIfNotYetWithNoProcessing("NaFlags", "js/naFlags.js");
-    importAnExternalJSFileIfNotYetWithNoProcessing("OceaniaFlags", "js/oceaniaFlags.js");
+    importAnExternalJSFileIfNotYetWithNoProcessing("AfricaFlags", "js/OneCountryLanguageTextJSFiles/africaFlags.js");
+    importAnExternalJSFileIfNotYetWithNoProcessing("AsiaFlags", "js/OneCountryLanguageTextJSFiles/asiaFlags.js");
+    importAnExternalJSFileIfNotYetWithNoProcessing("EuropeFlags", "js/OneCountryLanguageTextJSFiles/europeFlags.js");
+    importAnExternalJSFileIfNotYetWithNoProcessing("NaFlags", "js/OneCountryLanguageTextJSFiles/naFlags.js");
+    importAnExternalJSFileIfNotYetWithNoProcessing("OceaniaFlags", "js/OneCountryLanguageTextJSFiles/oceaniaFlags.js");
     importAnExternalJSFileIfNotYetWithNoProcessing("Mapdata", "js/mapdata.js");
     importAnExternalJSFileIfNotYetWithNoProcessing("Worldmap", "js/worldmap.js");
-    importAnExternalJSFileIfNotYetWithNoProcessing("StaticDataForRegion", "js/staticDataForRegion.js");
-    importAnExternalJSFileIfNotYetWithNoProcessing("SaFlags", "js/saFlags.js");
+    importAnExternalJSFileIfNotYetWithNoProcessing("StaticDataForRegion", "js/OneCountryLanguageTextJSFiles/staticDataForRegion.js");
+    importAnExternalJSFileIfNotYetWithNoProcessing("SaFlags", "js/OneCountryLanguageTextJSFiles/saFlags.js");
 
     initializationUtilityForFlags();
 }, 50);
@@ -103,10 +103,5 @@ function finalizeRegionalPage() {
     // process next time: otherwise start up time, the map will be loaded twice
     worldMapLoaded = false; // will stay false all the time
     regionalGlobalInitialization();
-    setTimeout(function() {
-        setApplicationLanguageDropDownBox("appLanguageToUse", JSON.parse(applicationLanguageDropDownValues),
-            startupValuesJSONObject.language);
-        document.getElementById("appLanguageToUse").selectedIndex = applicationTextLanguageSelectedIndex;
-    },250);
     setNavFooterTags("Surfing");
 }

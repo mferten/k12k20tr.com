@@ -80,10 +80,6 @@ aboutMain.appendChild(aboutAsideRight);
 
 createNavFooterAddIntoBodyAndReplaceBody(aboutBody, aboutHeader, aboutMain, "AboutMe");
 // Application Language Drop Down (Select/Options)
-setTimeout(function () {
-    setApplicationLanguageDropDownBox("appLanguageToUse", JSON.parse(applicationLanguageDropDownValues));
-    document.getElementById("appLanguageToUse").selectedIndex = applicationTextLanguageSelectedIndex;
-}, 350);
 
 function setAsideULLi(ulTag, hrefText, idName) {
     var aboutAsideLeftLi = document.createElement("li");

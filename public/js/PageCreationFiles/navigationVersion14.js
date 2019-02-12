@@ -51,7 +51,7 @@ function createOneNavItem(navAId,navAClass,navTextId,navValue,navUlElement,navEl
     else
     {
         var worldFlags = document.createElement("a");
-        worldFlags.setAttribute("class", navAClass + " menuItem");
+        worldFlags.setAttribute("class", navAClass);
         var worldFlagsTextElement = getASpanElement(navTextId, myUndefined,
             selectedApplicationLanguageTexts[navTextId]);
         worldFlags.name = navValue;

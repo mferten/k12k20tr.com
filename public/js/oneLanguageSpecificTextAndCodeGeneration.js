@@ -2,9 +2,9 @@ function recreateTheFlagsWithNewCountry(worldViewFlag)
 {
    // add one statement at the end of addEvent.js startUp ...
    // --> recreateTheFlagsWithNewCountry(true); TRUE for World view, FALSE for a Region: Save Startup Region to start with
-   // add <script src="js/addNewCountryFlag.js"></script> into showFlags.blade.php or dashBoard.blade.php
+   // add <script src="js/oneLanguageSpecificTextAndCodeGeneration.js"></script> into showFlags.blade.php or dashBoard.blade.php
 
-    // effected files: add Version Number and no JSON for /js/ folder 
+    // effected files: add Version Number and no JSON for /js/ folder
 
     // countriesPopulations.json
     // countriesRegions.json

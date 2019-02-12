@@ -122,21 +122,6 @@ function addChangeEvents(event)
     else {
         if (selectionName == "region") {
             processRegionPlus(selectionValue, true);
-        } else if (selectionId == "appLanguageToUse" && selectionValue != "ChooseOne") { /* Application Language Selection */
-            if (window.location.hostname.toUpperCase() == "K12K20.LOC") {
-                setApplicationLanguage(document.getElementById("appLanguageToUse").value.substring(22), true); // Change the Web Page Text Language
-                applicationTextLanguageSelectedIndex = (document.getElementById("appLanguageToUse").value.substring(22)-1);
-                // For the Language Pages: Take care of the second id_ChooseOne (double)
-                if (currentEWorldPage == "Text Languages" || currentEWorldPage == "Data Languages") {
-                    setTimeout(function() {
-                        document.getElementById("appLanguage").options[0].innerHTML = selectedApplicationLanguageTexts["id_ChooseOne"];
-                        if (document.getElementById("appCountry"))
-                            document.getElementById("appCountry").options[0].innerHTML = selectedApplicationLanguageTexts["id_ChooseOne"];
-                        if (document.getElementById("appLanguageToUseB"))
-                            document.getElementById("appLanguageToUseB").options[0].innerHTML = selectedApplicationLanguageTexts["id_ChooseOne"];
-                    },300);
-                }
-            } else window.open(applicationHrefs[document.getElementById("appLanguageToUse").value.substring(22)], "_self");
         } else if (selectionId == "id_CheckBoxPlaySounds") { // Sound Off
             playSoundsChanged();
         } else if (selectionId == "Country") { // a Country/Entity
@@ -232,14 +217,13 @@ function runReports()
         selectionValuesAsTitle = "This is a Reverse Image of ";
     var combinedFlag = document.getElementById("combineSearch").querySelector('input[name="combine"]:checked').value;
     for (var x in countrySelectableFeatureLocation)
-    {   console.log(document.getElementById(x).options[0].value); console.log(document.getElementById(x).value);
+    {
         if (document.getElementById(x).options[0].value != document.getElementById(x).value) // used criteria
         {
             selectedFieldsArray.push(countrySelectableFeatureLocation[x]);
             headingsArray.push(selectedApplicationLanguageTexts["id_" + x]);
             // categoryDescription[x]);           document.getElementById(x).options[document.getElementById(x).selectedIndex].innerHTML
             // Text Language (ie: Religion)       Data language (ie: Buddism)
-            console.log(x); console.log(categoryDescription[x]); console.log(selectedApplicationLanguageTexts[categoryDescription[x]]);
             selectionValuesAsTitle += selectedApplicationLanguageTexts[categoryDescription[x]] + " " +
                 document.getElementById(x).options[document.getElementById(x).selectedIndex].innerHTML + " "; // this is the Data Language
             if (combinedFlag == "id_RadioCombineAndSearch") selectionValuesAsTitle += selectedApplicationLanguageTexts["id_And"] + " ";

@@ -71,6 +71,8 @@ var textB;
 // one blank Span element
 var oneBlankSpan;
 
+var allCountryLanguages;
+
 // simplemaps region numbers
 var regionNumbers = {NorthAmerica:0, SouthAmerica:1, Europe:2, Africa:3, Oceania:4, Asia:5};
 var regionNames = {NorthAmerica:"North America", SouthAmerica:"South America", Europe:"Europe", Africa:"Africa", Oceania:"Australia & Oceania", Asia:"Asia"};
@@ -89,28 +91,6 @@ var initialMenuItems = {"id_Menu":eWorldMenuSetup,"id_MenuStart":eWorldMenuSetup
     "id_DataLanguages":eWorldDataLanguagesSetup,"id_Register":eWorldStartupSetup,};
 
 var combineMatrix = {"id_RadioCombineNoneSearch":"id_CombineSearchNone","id_RadioCombineAndSearch":"id_CombineSearchAnd","id_RadioCombineOrSearch":"id_CombineSearchOr"}
-
-var longNameFromCountry = {"AmericanSamoa":"American Samoa", "AntarcticTreatySystem":"Antarctic Treaty System", "AntiguaandBarbuda":"Antigua and Barbuda",
-"BonaireSintEustatiusandSaba":"Bonaire Sint Eustatius and Saba", "BosniaandHerzegovina":"Bosnia and Herzegovina", "BritishVirginIslands":"British Virgin Islands",
-"BritishIndianOceanTerritory":"British Indian Ocean Territory", "BurkinaFaso":"Burkina Faso", "CaboVerde":"Cabo Verde", "CanaryIslands":"Canary Islands",
-"CaymanIslands":"Cayman Islands", "CentralAfricanRepublic":"Central African Republic", "ChristmasIsland":"Christmas Island", "CocosIslands":"Cocos Islands",
-"CookIslands":"Cook Islands", "CostaRica":"Costa Rica", "DemocraticRepublicoftheCongo":"Democratic Republic of the Congo", "RepublicofCongo":"Republic of Congo",
-"CotedIvoire":"Côte d'Ivoire", "DominicanRepublic":"Dominican Republic", "ElSalvador":"El Salvador", "EquatorialGuinea":"Equatorial Guinea",
-"FalklandIslands":"Falkland Islands", "FaroeIslands":"Faroe Islands", "FrenchGuiana":"French Guiana", "FrenchPolynesia":"French Polynesia",
-"FrenchSouthernandAntarcticLands":"French Southern and Antarctic Lands", "GuineaBissau":"Guinea-Bissau", "HongKong":"Hong Kong", "IsleofMan":"Isle of Man",
-"MarshallIslands":"Marshall Islands", "NewCaledonia":"New Caledonia", "NewZealand":"New Zealand", "NorfolkIsland":"Norfolk Island",
-"NorthernMarianaIslands":"Northern Mariana Islands", "NorthKorea":"North Korea",  "PapuaNewGuinea":"Papua New Guinea", "PitcairnIslands":"Pitcairn Islands",
-"PuertoRico":"Puerto Rico", "RussianFederation":"Russian Federation", "SaintBarthelemy":"Saint Barthélemy", "SaintHelena":"Saint Helena",
-"SaintKittsandNevis":"St. Kitts & Nevis", "SaintLucia":"Saint Lucia", "SaintPierreandMiquelon":"Saint Pierre and Miquelon",
-"SaintVincentandGrenadines":"Saint Vincent and the Grenadines", "SanMarino":"San Marino", "SaoTomeandPrincipe":"São Tomé and Príncipe", "SaudiArabia":"Saudi Arabia",
-"SierraLeone":"Sierra Leone", "SintMaarten":"Sint Maarten", "SolomonIslands":"Solomon Islands", "SouthAfrica":"South Africa", "SouthKorea":"South Korea",
-"SouthSudan":"South Sudan", "SriLanka":"Sri Lanka", "StateofPalestine":"State of Palestine", "SvalbardandJanMayen":"Svalbard and Jan Mayen",
-"Taiwan":"Taiwan: Republic of China", "TimorLeste":"Timor-Leste", "TrinidadandTobago":"Trinidad and Tobago",
-"TurkishRepublicofNorthernCyprus":"Turkish Republic of Northern Cyprus", "TurksandCaicosIslands":"Turks and Caicos Islands", "UnitedKingdom":"United Kingdom",
-"UnitedStatesofAmerica":"United States", "UnitedStatesVirginIslands":"United States Virgin Islands", "UnitedArabEmirates":"United Arab Emirates",
-"WesternSahara":"Western Sahara", "VaticanCityAndHolySee":"Vatican City and Holy See", "WallisandFutuna":"Wallis and Futuna", "AlandIslands":"Åland Islands",
-"BouvetIsland":"Bouvet Island", "HeardIslandandMcDonaldIslands":"Heard Island and McDonald Islands",
-"SouthGeorgiaAndSouthSandwichIslands":"South Georgia And South Sandwich Islands", "UnitedStatesMinorOutlyingIslands":"United States Minor Outlying Islands" }
 
 var wikiUSState = {"WA":"Washington_(state)", "GA":"Georgia_(U.S._state)", "NY":"New_York_(state)"};
 var notInUNData = {"AntarcticTreatySystem":"AntarcticTreatySystem","BritishIndianOceanTerritory":"BritishIndianOceanTerritory","ChristmasIsland":"ChristmasIsland",
@@ -140,6 +120,7 @@ function initializationUtilityForAll() {
     previousRegion = -1; // region and register using
     lastUsedFilter = "";
     oneBlankSpan = getASpanElement(myUndefined, myUndefined, '&nbsp;');
+    allCountryLanguages = allLanguages; // emulate Dashboard since we see all the countries
     startupValuesJSONObject = getStartupValues();
     if (startupValuesJSONObject.versionNumber != versionNumber) {
         localStorage.removeItem("startupValues");
@@ -169,35 +150,40 @@ function eWorldMenuSetup() {
 // rename one CSS file individually
 
 function eWorldGlobalSetup() {
-    importAnExternalJSFile("id_Searching", "js/globalVersion010.js", "Searching"); // import a javascript external file
+    importAnExternalJSFile("id_Searching", "js/PageCreationFiles/globalVersion14.js", "Searching"); // import a javascript external file
 }
 
 function eWorldRegionalSetup() {
-    importAnExternalJSFile("id_Surfing", "js/regionalVersion010.js", "Surfing"); // import a javascript external file
+    importAnExternalJSFile("id_Surfing", "js/PageCreationFiles/regionalVersion14.js", "Surfing"); // import a javascript external file
 }
 
 function eWorldCountriesSetup() {
-    importAnExternalJSFile("id_Countries", "js/countryCodesSetupVersion010.js", "CountryCodes"); // import a javascript external file
+    importAnExternalJSFile("id_Countries", "js/PageCreationFiles/countryCodesSetupVersion14.js", "CountryCodes"); // import a javascript external file
 }
 
 function eWorldStartupSetup(  ) {
-    importAnExternalJSFile("id_Register", "js/registerSetupVersion010.js", "Register"); // import a javascript external file
+    importAnExternalJSFile("id_Register", "js/PageCreationFiles/registerSetupVersion14.js", "Register"); // import a javascript external file
 }
 
 function eWorldCitationsSetup() {
-    importAnExternalJSFile("id_Citations", "js/citationsVersion010.js", "Citations"); // import a javascript external file
+    importAnExternalJSFile("id_Citations", "js/PageCreationFiles/citationsVersion14.js", "Citations"); // import a javascript external file
 }
 
 function eWorldAboutSetup() {
-    importAnExternalJSFile("id_AboutMe", "js/aboutMeVersion010.js", "AboutMe"); // import a javascript external file
+    importAnExternalJSFile("id_AboutMe", "js/PageCreationFiles/aboutMeVersion14.js", "AboutMe"); // import a javascript external file
 }
 
 function eWorldTextLanguagesSetup() {
-    importAnExternalJSFile("id_TextLanguages", "js/textLanguagesVersion010.js", "TextLanguages"); // import a javascript external file
+    importAnExternalJSFile("id_TextLanguages", "js/PageCreationFiles/textLanguagesVersion14.js", "TextLanguages"); // import a javascript external file
 }
 
 function eWorldDataLanguagesSetup() {
-    importAnExternalJSFile("id_DataLanguages", "js/dataLanguagesVersion010.js", "DataLanguages"); // import a javascript external file
+    importAnExternalJSFile("id_DataLanguages", "js/PageCreationFiles/dataLanguagesVersion14.js", "DataLanguages"); // import a javascript external file
+}
+
+function openWithSelectedlanguage(hrefValue) {
+    document.getElementById("id_SelectedLanguageHref").href = hrefValue;
+    triggerAMouseEvent("id_SelectedLanguageHref");
 }
 
 function isAppleProduct()
@@ -218,18 +204,18 @@ function getStartupValues()
     else // create JSON object to save into Browser's Local Data Area
     {
         var savedValuesJSONObject =
-            new StartupValues(versionNumber,
-                              DEFAULTREGIONAPPLICATIONLANGUAGE,
-                              DEFAULTREGIONAPPLICATIONCOUNTRYANDLANGUAGE,
-                              DEFAULTREGION,
-                              false,
-                              "id_RadioCombineAndSearch",
-                              false,
-                              "id_MenuStart",
-                              DEFAULTREGIONAPPLICATIONLANGUAGETEXT,
-                              DEFAULTREGIONFLAGOFCOUNTRIES,
-                              DEFAULTREGIONLANGUAGEOFCOUNTRIES,
-                              DEFAULTREGIONFLAGOFCOUNTRIESFULLNAME);
+        new StartupValues(versionNumber,
+                          DEFAULTREGIONAPPLICATIONLANGUAGE,
+                          DEFAULTREGIONAPPLICATIONCOUNTRYANDLANGUAGE,
+                          DEFAULTREGION,
+                          false,
+                          "id_RadioCombineAndSearch",
+                          false,
+                          "id_MenuStart",
+                          DEFAULTREGIONAPPLICATIONLANGUAGETEXT,
+                          DEFAULTREGIONFLAGOFCOUNTRIES,
+                          DEFAULTREGIONLANGUAGEOFCOUNTRIES,
+                          DEFAULTREGIONFLAGOFCOUNTRIESFULLNAME);
         window.localStorage.setItem("startupValues", JSON.stringify(savedValuesJSONObject)); // Saved into LDA
     }
     return savedValuesJSONObject; // return StartupValues constructor Object
@@ -674,10 +660,6 @@ function setSelectOptionsFromServerData()
 {
     // Application Language Drop Down (Select/Options)
     setTimeout(function () {
-        setApplicationLanguageDropDownBox("appLanguageToUse", JSON.parse(applicationLanguageDropDownValues));
-        document.getElementById("appLanguageToUse").selectedIndex = applicationTextLanguageSelectedIndex;
-    }, 1100);
-    setTimeout(function () {
         setOptionsFromSavedData(document.getElementById("Language"),worldLanguagesDropDownValues);
     }, 700);
     if (appleProduct == false) {
@@ -752,27 +734,43 @@ function muteTheSoundCodes(h2Title, parentElement, registerFlag)
     }
 }
 
-function addApplicationLanguageSelectionDropDownBox(addIntoTag, idIn)
+function addApplicationLanguageSelectionDropDownBox(addIntoTag) // See Global only it is not using this function...
 {
-    // Application language Selection Drop Down Box
-    var idName;
-    if (idIn) idName = idIn;
-    else idName = "appLanguageToUse";
-    var selectElement = createReturnASelectElement(idName, myUndefined, false, "selectBoxStyles marginPointPoint2Rem appLanguageToUse");
-    var appLangLabel = document.createElement("label");
-    appLangLabel.setAttribute("for", idName);
-    appLangLabel.setAttribute("class", "applicationLanguageRegional");
+    // Application language Selection Drop Down Menu (no more a Box: a Select/Option)
+    var dropDownTopDiv = document.createElement("div");
+    dropDownTopDiv.setAttribute("class", "dropdown");
+    var dropDownButton = document.createElement("button");
+    dropDownButton.setAttribute("class", "dropbtn");
+    createAnImageInA(dropDownButton, selectedApplicationLanguageName["English (US)"][0],
+        selectedApplicationLanguageName["English (US)"][1], selectedApplicationLanguageName["English (US)"][2], "dropDownFlagText");
+    dropDownTopDiv.appendChild(dropDownButton);
+    var dropDownInnerDiv = document.createElement("div");
+    dropDownInnerDiv.setAttribute("class", "dropdown-content");
 
-    var appLangLabelTextSpan = getASpanElement("", myUndefined, " ");
-    if (addIntoTag && idIn) selectElement.appendChild(setFirstOption(selectedApplicationLanguageTexts["id_ChooseOne"], "ChooseOne", selectElement), true);
-    else if (!addIntoTag) appLangLabelTextSpan.setAttribute("class", "dashBoardCombine");
-    appLangLabelTextSpan.appendChild(selectElement);
-    appLangLabel.appendChild(appLangLabelTextSpan);
-    if (addIntoTag) addIntoTag.appendChild(appLangLabel);
-    else h2First.appendChild(appLangLabel);
+    for (var langName in selectedApplicationLanguageName) {
+        createAnImageInA(dropDownInnerDiv, selectedApplicationLanguageName[langName][0],
+            selectedApplicationLanguageName[langName][1], selectedApplicationLanguageName[langName][2]);
+    }
+    dropDownTopDiv.appendChild(dropDownInnerDiv);
+    if (addIntoTag) addIntoTag.appendChild(dropDownTopDiv);
+    else h2First.appendChild(dropDownTopDiv);
 }
 
-function setCombineValueCodes(a)
+function createAnImageInA(addInTag, languageName, countryName, hrefURL, spanTextClass) {
+    var dropDownA = document.createElement("a");
+    dropDownA.setAttribute("href", hrefURL);
+    dropDownA.setAttribute("target", "_self");
+    dropDownA.setAttribute("alt", countryName);
+    var dropDownAImg = document.createElement("img");
+    dropDownAImg.setAttribute("class", "dropdownFlag");
+    dropDownAImg.setAttribute("src", "data:image/svg+xml," + flagsSVGFiles[countryName].svg);
+    dropDownA.appendChild(dropDownAImg);
+    if (spanTextClass) dropDownA.appendChild(getASpanElement(myUndefined, spanTextClass, languageName));
+    else dropDownA.appendChild(getASpanElement(myUndefined, myUndefined, languageName));
+    addInTag.appendChild(dropDownA);
+}
+
+function setCombineValueCodes()
 {
     if (currentEWorldPage == "Startup" || currentEWorldPage == "eWorld Global") {
         setTimeout(function() // if user has the startup mute value
@@ -784,7 +782,8 @@ function setCombineValueCodes(a)
             }
             else if (startupValuesJSONObject.combine == "id_RadioCombineAndSearch") {
                 combineTheSearchAndRadioBox.setAttribute("checked", true);
-                document.getElementById("id_CombineSearchAnd").classList.add("selectedInputTag");
+                if (document.getElementById("id_CombineSearchAnd"))
+                    document.getElementById("id_CombineSearchAnd").classList.add("selectedInputTag");
                 previousCombineOption = "id_RadioCombineAndSearch";
             }
             else {
@@ -1410,7 +1409,7 @@ function getDateOnly()
 // Trigger a Mouse Event
 function triggerAMouseEvent(idName)
 {
-    var event = new MouseEvent('click', { 'view': window,'bubbles': true,'cancelable': true });
+    var event = new MouseEvent('click', { 'view': window,'bubbles': false,'cancelable': false });
     document.getElementById(idName).dispatchEvent(event);
 }
 
@@ -1470,7 +1469,7 @@ function createNavFooterAddIntoBodyAndReplaceBody(tagBody, tagHeader, tagMain, n
     setTimeout(function() {
         document.getElementById("topHTML").replaceChild(tagBody, document.body);
         setNavFooterTags(navigationName);
-    },50);
+    },75);
 }
 
 function fillLeadingZeros(text, size)

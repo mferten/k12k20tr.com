@@ -3,11 +3,10 @@
 currentEWorldPage = "eWorld Countries"; // this should be up here all the time to work again from the menu (after the first time)
 
 // retrieve the external js files if not open yet
-importAnExternalJSFileIfNotYetWithNoProcessing("CountriesTableData", "js/countriesTableData.js");
-importAnExternalJSFileIfNotYetWithNoProcessing("StaticDataForDashboard", "js/staticDataForDashboard.js");
+importAnExternalJSFileIfNotYetWithNoProcessing("CountriesTableData", "js/OneCountryLanguageTextJSFiles/countriesTableData.js");
 
 // add this into master.blade.php <script src="js/countryCodes.js"></script> for Table Data
-// add this into master.blade.php <script src="js/addNewCountryFlag.js"> to Create World View or Each Region Flags object.
+// add this into master.blade.php <script src="js/oneLanguageSpecificTextAndCodeGeneration.js"> to Create World View or Each Region Flags object.
 
 initializationUtilityForFlags();
 
@@ -101,16 +100,12 @@ setTimeout(function () {
     eWorldCountriesBody.appendChild(eWorldCountriesMain);
     eWorldCountriesBody.appendChild(eWorldCountriesNav);
     eWorldCountriesBody.appendChild(eWorldCountriesFooter);
-    // Application Language Drop Down (Select/Options)
-    setTimeout(function () {
-        // (2) to rebuld the Table use this one
-        /*
+
+    // (2) to rebuld the Table use this one
+    /*
         createATable("id_CountryListMenu", ["Country","Region","Capital","Largest","Population","Surface","Income","Country Codes"],
             countryCodesOfAllCountries, -999, "Array", myUndefined, true, 16);
-        */
-        setApplicationLanguageDropDownBox("appLanguageToUse", JSON.parse(applicationLanguageDropDownValues));
-        document.getElementById("appLanguageToUse").selectedIndex = applicationTextLanguageSelectedIndex;
-    }, 350);
+     */
 }, 50);
 
 var aToZObject = "%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_A%22%20class%3D%22selectedInputTag%20aToZ%22%3EA%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_B%22%20class%3D%22aToZ%22%3EB%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_C%22%20class%3D%22aToZ%22%3EC%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_D%22%20class%3D%22aToZ%22%3ED%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_E%22%20class%3D%22aToZ%22%3EE%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_F%22%20class%3D%22aToZ%22%3EF%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_G%22%20class%3D%22aToZ%22%3EG%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_H%22%20class%3D%22aToZ%22%3EH%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_I%22%20class%3D%22aToZ%22%3EI%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_J%22%20class%3D%22aToZ%22%3EJ%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_K%22%20class%3D%22aToZ%22%3EK%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_L%22%20class%3D%22aToZ%22%3EL%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_M%22%20class%3D%22aToZ%22%3EM%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_N%22%20class%3D%22aToZ%22%3EN%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_O%22%20class%3D%22aToZ%22%3EO%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_P%22%20class%3D%22aToZ%22%3EP%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_Q%22%20class%3D%22aToZ%22%3EQ%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_R%22%20class%3D%22aToZ%22%3ER%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_S%22%20class%3D%22aToZ%22%3ES%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_T%22%20class%3D%22aToZ%22%3ET%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_U%22%20class%3D%22aToZ%22%3EU%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_V%22%20class%3D%22aToZ%22%3EV%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_W%22%20class%3D%22aToZ%22%3EW%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_X%22%20class%3D%22aToZ%22%3E%3Cdel%3EX%3C%2Fdel%3E%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_Y%22%20class%3D%22aToZ%22%3EY%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_Z%22%20class%3D%22aToZ%22%3EZ%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20id%3D%22id_All%22%20class%3D%22aToZ%22%3EAll%3C%2Fspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20";
@@ -163,8 +158,6 @@ var currentLetter = myUndefined;
 var tableRowsByCapitalCity = {};
 var currentSortIcon;
 var headerRow;
-
-var allCountryLanguages;
 
 dashBoardFlag = true; // emulate Dashboard since we see all the countries
 
@@ -319,7 +312,7 @@ function countryCodesClickEvents(event)
 function countryCodesChangeEvents(event)
 {
     if (event.target.id == "appLanguageToUse") {
-        window.open(applicationHrefs[document.getElementById("appLanguageToUse").value.substring(22)], "_self");
+        openWithSelectedlanguage(applicationHrefs[document.getElementById("appLanguageToUse").value.substring(22)]);
     }
 }
 
@@ -503,7 +496,6 @@ function finalizeCountriesPage() {
     document.getElementById("id_CountryListMenu").innerHTML = decodeURIComponent(countriesTableData); // (1) if the Table Data is Saved, to rebuild comment this decodeURI out
     document.getElementById("id_CountryFacts").innerHTML = selectedApplicationLanguageTexts["id_Countries"]; // start place holder
     triggerAMouseEvent("id_A");
-    allCountryLanguages = allLanguages; // emulate Dashboard since we see all the countries
     document.getElementsByTagName("body")[0].classList.add("countryCodeBodyBackground");
     // setTheTableData(); // (3) if the Table Data is NOT saved
     // /* (4) if table data is SAVED

@@ -52,13 +52,7 @@ citationMain.appendChild(citationAside);
 
 setTimeout(function () {
     createNavFooterAddIntoBodyAndReplaceBody(citationBody, citationHeader, citationMain, "Citations");
-}, 50);
-
-// Application Language Drop Down (Select/Options)
-setTimeout(function () {
-    setApplicationLanguageDropDownBox("appLanguageToUse", JSON.parse(applicationLanguageDropDownValues));
-    document.getElementById("appLanguageToUse").selectedIndex = applicationTextLanguageSelectedIndex;
-}, 450);
+}, 100);
 
 function addCitationPBlock(imageSource, aText, pText, URL, idName)
 {

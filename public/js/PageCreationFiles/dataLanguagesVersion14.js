@@ -77,7 +77,6 @@ textLanguageI.innerHTML = "save"; // this must be lowercase to work
 textLanguagePTop.appendChild(textLanguageSpanInnerTwo);
 textLanguageLabelTwo.appendChild(textLanguageSelectTwo);
 textLanguagePTop.appendChild(textLanguageLabelTwo);
-addApplicationLanguageSelectionDropDownBox(textLanguagePTop, "appLanguageToUseB");
 textLanguagePTop.appendChild(textLanguageI);
 textLanguageMain.appendChild(textLanguagePTop);
 
@@ -142,18 +141,6 @@ setTimeout(function () {
     document.getElementById("id_SaveStartupValues").addEventListener("click", clickedSaveButton, false);
     getAllApplicationLanguageData();
 }, 250);
-
-// Application Language Drop Down (Select/Options) for Based Application Language Selection: Accent Entry...
-setTimeout(function () {
-    setApplicationLanguageDropDownBox("appLanguageToUseB", JSON.parse(applicationLanguageDropDownValues));
-    document.getElementById("appLanguageToUseB").selectedIndex = 0;
-}, 350);
-
-// Application Language Drop Down (Select/Options) for Based Application Language Selection: Accent Entry...
-setTimeout(function () {
-    setApplicationLanguageDropDownBox("appLanguageToUse", JSON.parse(applicationLanguageDropDownValues));
-    document.getElementById("appLanguageToUse").selectedIndex = applicationTextLanguageSelectedIndex;
-}, 350);
 
 function clickedSaveButton(event)
 {
@@ -415,11 +402,6 @@ function resetEntry()
 // Retrieve the Application Data Language (if any) and Set Up the Selected Application Language Data for the Page
 function getAllApplicationLanguageData()
 {
-    var lowerToUpperCaseTurkish = {"a":"A", "b": "B", "c": "C", "ç": "Ç", "d": "D", "e": "E", "f": "F", "g": "G", "ğ": "Ğ", "h": "H", "ı": "I", "i": "İ", "j": "J",
-        "k": "K", "l": "L", "m": "M", "n": "N", "o": "O", "ö": "Ö", "p": "P", "r": "R", "s": "S", "ş": "Ş", "t": "T", "u": "U", "ü": "Ü", "v": "V", "y": "Y", "z": "Z"};
-    var upperToLowerCaseTurkish = {"A":"a", "B": "b", "C": "c", "Ç": "ç", "D": "d", "E": "e", "F": "f", "G": "g", "Ğ": "ğ", "H": "h", "I": "ı", "İ": "i", "J": "j",
-        "K": "k", "L": "l", "M": "n", "N": "n", "O": "o", "Ö": "ö", "P": "p", "R": "r", "S": "s", "Ş": "ş", "T": "t", "U": "u", "Ü": "ü", "V": "v", "Y": "y", "Z": "z"};
-
     // Get All the Language Data from the database (if any)
     var xhttploadTagsAllData = new XMLHttpRequest();
     // On Ready State Change
@@ -1553,9 +1535,9 @@ var usaAppLanTexts = [ // for Gini: low/medium/high
     "Shape: Star",
     "Shape: Stone",
     "Shape: Stripe",
+    "Shape: Sugarcane",
     "Shape: Sun",
     "Shape: Sun of May",
-    "Shape: Surgarcane",
     "Shape: Sword",
     "Shape: Symbol",
     "Shape: Taegeukgi",
@@ -1649,13 +1631,11 @@ var usaAppLanTexts = [ // for Gini: low/medium/high
     "Water: Pacific",
     "Water: Persian Gulf",
     "Water: Philippine",
-    "Water: Read",
     "Water: Red",
     "Water: Savu",
     "Water: Sea of Azov",
     "Water: Sea of Japan",
     "Water: Sea of Okhotsk",
-    "Water: See of Japan",
     "Water: Solomon",
     "Water: South China",
     "Water: Southern",
