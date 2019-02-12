@@ -309,13 +309,6 @@ function countryCodesClickEvents(event)
     }
 }
 
-function countryCodesChangeEvents(event)
-{
-    if (event.target.id == "appLanguageToUse") {
-        openWithSelectedlanguage(applicationHrefs[document.getElementById("appLanguageToUse").value.substring(22)]);
-    }
-}
-
 function aSortIconIsSelected(idIcon)
 {
     if (showSelected[idIcon]) idIcon = showSelected[idIcon];

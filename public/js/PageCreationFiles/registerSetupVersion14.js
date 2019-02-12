@@ -142,7 +142,6 @@ function saveStartupValues(startupValuesJSONObject)
         if (initialMenuItems[startupValuesJSONObject.startWith]) {
             initialMenuItems[startupValuesJSONObject.startWith](startupValuesJSONObject.startWith);
         }
-        applicationTextLanguageSelectedIndex = (startupValuesJSONObject.language.substring(22)-1); // selected startup language, start using after saved...
     }, 500);
 }
 
@@ -160,7 +159,7 @@ function setStartupValues(savedValuesJSONObject)
         // set the Sound On/Off Check Box
         document.getElementById("id_CheckBoxPlaySounds").checked = savedValuesJSONObject.isSoundOff;
         // set the Combine Search Box
-        document.getElementById(combineMatrix[savedValuesJSONObject.combine]).checked = true;
+        document.getElementById(savedValuesJSONObject.combine).checked = true;
         document.getElementById(combineMatrix[savedValuesJSONObject.combine]).classList.add("selectedInputTag");
         previousCombineOption = combineMatrix[savedValuesJSONObject.combine];
         // set the Reverse On/Off

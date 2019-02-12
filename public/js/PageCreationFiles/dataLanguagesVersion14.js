@@ -281,8 +281,6 @@ function saveApplicationLanguageData()
     {
         if (xhttpsaveTagsData.readyState == 4 && xhttpsaveTagsData.status == 200)
         {
-            // if applicationLanguageId == applicationTextLanguageSelectedIndex (same in testLanguagesVersion...)
-            // ===> trigger "appLanguageToUse" change event (as if the Application Text Language is changed!)
             return (xhttpsaveTagsData.responseText == "success") ? true : false;
         }
     };

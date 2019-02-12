@@ -117,8 +117,7 @@ function addChangeEvents(event)
     var selectionId = event.target.id;
     var selectionValue = event.target.value;
     var selectionName = event.target.name;
-    if (currentEWorldPage == "eWorld Countries") countryCodesChangeEvents(event); // any change event belongs to Countries will be handled by it.
-    else if (currentEWorldPage == "Startup") changeStartupEvents(event); // any change event belongs to Startup will be handled by it.
+    if (currentEWorldPage == "Startup") changeStartupEvents(event); // any change event belongs to Startup will be handled by it.
     else {
         if (selectionName == "region") {
             processRegionPlus(selectionValue, true);

@@ -176,7 +176,8 @@ class CountriesTableSeeder extends Seeder
             "KongoCumhuriyeti" => "Kongo Cumhuriyeti",
             "BatıSahara" => "Batı Sahara",
             "Kuraço" => "Kuraço",
-            "GüneySudan" => "Güney Sudan"
+            "GüneySudan" => "Güney
+            Sudan"
         ];
         # Initiate a new timestamp we can use for created_at/updated_at fields
         $timestamp = Carbon\Carbon::now()->toDateTimeString(); # same is OK
