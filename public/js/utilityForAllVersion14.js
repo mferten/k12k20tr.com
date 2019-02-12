@@ -127,7 +127,7 @@ function initializationUtilityForAll() {
         startupValuesJSONObject = getStartupValues();
     }
 
-    applicationLanguageDropDownValues = getApplicationLanguageDropDownValues();
+    // applicationLanguageDropDownValues = getApplicationLanguageDropDownValues();
 
     flagOfCountries = startupValuesJSONObject.flagOfCountries;
     languageOfCountries = startupValuesJSONObject.languageOfCountries;
