@@ -723,8 +723,8 @@ function addApplicationLanguageSelectionDropDownBox(addIntoTag) // See Global on
     dropDownTopDiv.setAttribute("class", "dropdown");
     var dropDownButton = document.createElement("button");
     dropDownButton.setAttribute("class", "dropbtn");
-    createAnImageInA(dropDownButton, selectedApplicationLanguageName["English (US)"][0],
-        selectedApplicationLanguageName["English (US)"][1], selectedApplicationLanguageName["English (US)"][2], "dropDownFlagText", true);
+    createAnImageInA(dropDownButton, selectedApplicationLanguageName["Turkish"][0],
+        selectedApplicationLanguageName["Turkish"][1], selectedApplicationLanguageName["Turkish"][2], "dropDownFlagText", true);
     dropDownTopDiv.appendChild(dropDownButton);
     var dropDownInnerDiv = document.createElement("div");
     dropDownInnerDiv.setAttribute("class", "dropdown-content");
