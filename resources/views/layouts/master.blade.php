@@ -27,7 +27,4 @@
         <script src="js/OneCountryLanguageTextJSFiles/flagsSVGFilesVersion14.js"></script>
         <script src="js/OneCountryLanguageTextJSFiles/countriesFeaturesVersion14.js"></script>
     </head>
-    <body>
-        <p class="displayNone">Place Holder</p>
-    </body>
 </html>

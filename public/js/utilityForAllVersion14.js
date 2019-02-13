@@ -723,6 +723,7 @@ function addApplicationLanguageSelectionDropDownBox(addIntoTag) // See Global on
     dropDownTopDiv.setAttribute("class", "dropdown");
     var dropDownButton = document.createElement("button");
     dropDownButton.setAttribute("class", "dropbtn");
+    dropDownButton.setAttribute("type", "button");
     createAnImageInA(dropDownButton, "Türkçe",
         "Turkey", "http://www.k12k20tr.com", "dropDownFlagText", true);
     dropDownTopDiv.appendChild(dropDownButton);
@@ -744,11 +745,11 @@ function createAnImageInA(addInTag, languageName, countryName, hrefURL, spanText
     else {
         dropDownA.setAttribute("href", hrefURL);
         dropDownA.setAttribute("target", "_self");
-        dropDownA.setAttribute("alt", countryName);
     }
     var dropDownAImg = document.createElement("img");
     dropDownAImg.setAttribute("class", "dropdownFlag");
     dropDownAImg.setAttribute("src", "data:image/svg+xml," + flagsSVGFiles[countryName].svg);
+    dropDownAImg.setAttribute("alt", countryName);
     dropDownA.appendChild(dropDownAImg);
     if (spanTextClass) dropDownA.appendChild(getASpanElement(myUndefined, spanTextClass, languageName));
     else dropDownA.appendChild(getASpanElement(myUndefined, myUndefined, languageName));
