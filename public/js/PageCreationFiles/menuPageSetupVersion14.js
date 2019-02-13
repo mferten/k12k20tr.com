@@ -81,7 +81,7 @@ function importAnExternalJSFileIfNotYetWithNoProcessing(jsFileName, jsURL)
         if (currentEWorldPage == "eWorld Global" && jsFileName == 'Worldmap') { // onload: loaded but not ready: weird
             setTimeout(function() {
                 finalizeGlobalPage();
-            }, 30);
+            }, 100);
         }
         else if (currentEWorldPage == "eWorld Countries" && jsFileName == 'CountriesTableData') {
             setTimeout(function() {
@@ -105,7 +105,7 @@ function importAnExternalJSFileIfNotYetWithNoProcessing(jsFileName, jsURL)
             if (currentEWorldPage == "eWorld Global" && jsFileName == 'Worldmap') { // onload: loaded but not ready: weird
                 setTimeout(function() {
                     finalizeGlobalPage();
-                }, 50);
+                }, 100);
             }
             else if (currentEWorldPage == "eWorld Countries" && jsFileName == 'CountriesTableData') {
               setTimeout(function() {

@@ -17,7 +17,7 @@ class ApplicationLanguagesTableSeeder extends Seeder
     {
         # Array of Initial (Users can not change/delete) Application Core Languages
         $language = ['English', 'Turkish', 'Slovak'];
-        $country = ['USA', 'Turkey', 'Slovakia'];
+        $country = ['UnitedStatesofAmerica', 'Turkey', 'Slovakia'];
         # Initiate a new timestamp we can use for created_at/updated_at fields
         $timestamp = Carbon\Carbon::now()->toDateTimeString(); # same is OK
 

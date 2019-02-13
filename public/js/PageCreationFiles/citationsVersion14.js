@@ -52,7 +52,7 @@ citationMain.appendChild(citationAside);
 
 setTimeout(function () {
     createNavFooterAddIntoBodyAndReplaceBody(citationBody, citationHeader, citationMain, "Citations");
-}, 100);
+}, 250);
 
 function addCitationPBlock(imageSource, aText, pText, URL, idName)
 {

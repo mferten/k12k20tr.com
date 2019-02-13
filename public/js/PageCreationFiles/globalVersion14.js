@@ -10,9 +10,13 @@ setTimeout(function () {
     importAnExternalJSFileIfNotYetWithNoProcessing("Worldmap", "js/worldmap.js");
 
     initializationUtilityForFlags();
+    
+    if (typeof allCountryNames == 'undefined') // text or data lanageues.js may define this variable
+        allCountryNames = getAllCountriesNames();
+    if (typeof allCountryFullNames == 'undefined') // text or data lanageues.js may define this variable
+        allCountryFullNames = getAllCountriesFullNames();
 }, 50);
 
-// World Languages Drop Down Values
 if (typeof worldLanguagesDropDownValues == 'undefined') // text or data lanageues.js may define this variable
     var worldLanguagesDropDownValues;
 // World Religions Drop Down Values
@@ -23,59 +27,57 @@ var worldWatersDropDownValues;
 var flagsColorsDropDownValues;
 // Flags Shapes Drop Down Values
 var flagsShapesDropDownValues;
-
 var globalBody =  document.createElement("body");
-globalBody.setAttribute("name","global");
-globalBody.setAttribute("id","globalBody");
-
-var globalHeader = document.createElement("header");
-globalHeader.setAttribute("id", "id_Header");
-globalHeader.setAttribute("class","center");
-
-h1TitleCodes(globalHeader);
-
-/* Create All Category Select Input Fields */
-var selectTextSpan = getASpanElement("", myUndefined, " ");
-// These will be multiple selection drop down Category Select fields:
-createSelectFields(selectTextSpan, ["Country", "Population", "LandArea", "Language", "Religion", "Reports"],
-    "selectBoxStyles marginPointPoint2Rem worldSelectSize");
-addApplicationLanguageSelectionDropDownBox(selectTextSpan);
-firstDivElement.appendChild(selectTextSpan);
-
-var flags = document.createElement("div");
-flags.setAttribute("id", "flagsWorld");
-firstDivElement.appendChild(flags);
-globalHeader.appendChild(firstDivElement);
-
-var globalMain = document.createElement("main");
-globalMain.setAttribute("id", "rowID");
-globalMain.setAttribute("class","myInfoPage");
-
-globalBody.appendChild(globalHeader); // must be here for setTheRegionFlags to work...
-globalBody.appendChild(globalMain); // must be here for simplemaps
-
-var globalNav = document.createElement("nav");
-globalNav.setAttribute("id", "id_Navigation");
-globalNav.setAttribute("class", "center");
-globalNav.setAttribute("data-nav", "Searching");
-
-var globalFooter = document.createElement("footer");
-globalFooter.setAttribute("class","center");
-var globalFooterP = document.createElement("p");
-globalFooterP.setAttribute("id","id_CopyRight");
-var globalFooterP2 = document.createElement("p");
-globalFooterP2.setAttribute("id","id_LanguageImplementedBy");
-globalFooter.appendChild(globalFooterP);
-globalFooter.appendChild(globalFooterP2);
-
-globalBody.appendChild(globalNav);
-globalBody.appendChild(globalFooter);
+var globalMain;
 
 setTimeout(function () {
-    if (typeof allCountryNames == 'undefined') // text or data lanageues.js may define this variable
-        allCountryNames = getAllCountriesNames();
-    if (typeof allCountryFullNames == 'undefined') // text or data lanageues.js may define this variable
-        allCountryFullNames = getAllCountriesFullNames();
+    // World Languages Drop Down Values
+    globalBody.setAttribute("name","global");
+    globalBody.setAttribute("id","globalBody");
+
+    var globalHeader = document.createElement("header");
+    globalHeader.setAttribute("id", "id_Header");
+    globalHeader.setAttribute("class","center");
+
+    h1TitleCodes(globalHeader);
+
+    /* Create All Category Select Input Fields */
+    var selectTextSpan = getASpanElement("", myUndefined, " ");
+    // These will be multiple selection drop down Category Select fields:
+    createSelectFields(selectTextSpan, ["Country", "Population", "LandArea", "Language", "Religion", "Reports"],
+        "selectBoxStyles marginPointPoint2Rem worldSelectSize");
+    addApplicationLanguageSelectionDropDownBox(selectTextSpan);
+    firstDivElement.appendChild(selectTextSpan);
+
+    var flags = document.createElement("div");
+    flags.setAttribute("id", "flagsWorld");
+    firstDivElement.appendChild(flags);
+    globalHeader.appendChild(firstDivElement);
+
+    globalMain = document.createElement("main");
+    globalMain.setAttribute("id", "rowID");
+    globalMain.setAttribute("class","myInfoPage");
+
+    globalBody.appendChild(globalHeader); // must be here for setTheRegionFlags to work...
+    globalBody.appendChild(globalMain); // must be here for simplemaps
+
+    var globalNav = document.createElement("nav");
+    globalNav.setAttribute("id", "id_Navigation");
+    globalNav.setAttribute("class", "center");
+    globalNav.setAttribute("data-nav", "Searching");
+
+    var globalFooter = document.createElement("footer");
+    globalFooter.setAttribute("class","center");
+    var globalFooterP = document.createElement("p");
+    globalFooterP.setAttribute("id","id_CopyRight");
+    var globalFooterP2 = document.createElement("p");
+    globalFooterP2.setAttribute("id","id_LanguageImplementedBy");
+    globalFooter.appendChild(globalFooterP);
+    globalFooter.appendChild(globalFooterP2);
+
+    globalBody.appendChild(globalNav);
+    globalBody.appendChild(globalFooter);
+
     // World Languages Drop Down Values
     worldLanguagesDropDownValues = getWorldLanguagesDropDownValues();
     // World Religions Drop Down Values
@@ -86,7 +88,7 @@ setTimeout(function () {
     flagsColorsDropDownValues = getFlagsColorsDropDownValues();
     // Flags Shapes Drop Down Values
     flagsShapesDropDownValues = getFlagsShapesDropDownValues();
-}, 200);
+}, 75);
 
 function finalizeGlobalPage() {
     document.getElementById("topHTML").replaceChild(globalBody, document.body);
