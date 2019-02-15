@@ -129,7 +129,7 @@ function getWorldLanguagesDropDownValues() {
 {"value":"Norwegian"},{"value":"Nyanja"},{"value":"Oriya"},{"value":"Oromo"},{"value":"Palauan"},{"value":"Papiamento"},{"value":"Pashto"},{"value":"Persian"},{"value":"Polish"},
 {"value":"Portuguese"},{"value":"Punjabi"},{"value":"Quechua"},{"value":"Rarotongan"},{"value":"Romanian"},{"value":"Romansch"},{"value":"Russian"},{"value":"Samoan"},
 {"value":"Sango"},{"value":"Sanskrit"},{"value":"Saraiki"},{"value":"Scots"},{"value":"Sekalanga"},{"value":"Sepedi"},{"value":"Serbian"},{"value":"Sesotho"},{"value":"Setswana"},
-{"value":"Seychellois Creole"},{"value":"Sharchhopka"},{"value":"Shimaore"},{"value":"Shona"},{"value":"Sindhi"},{"value":"Sinhala"},{"value":"siSwati"},{"value":"Slovak"},
+{"value":"Seychellois Creole"},{"value":"Sharchhopka"},{"value":"Shona"},{"value":"Sindhi"},{"value":"Sinhala"},{"value":"siSwati"},{"value":"Slovak"},
 {"value":"Slovenian"},{"value":"Somali"},{"value":"Spanish"},{"value":"Swahili"},{"value":"Swedish"},{"value":"Tajik"},{"value":"Tamil"},{"value":"Tatar"},
 {"value":"Telugu"},{"value":"Temne"},{"value":"Tetum"},{"value":"Thai"},{"value":"Tigrinya"},{"value":"Tok Pisin"},{"value":"Tokelauan"},{"value":"Tonga"},{"value":"Tongan"},
 {"value":"Turkish"},{"value":"Turkmen"},{"value":"Tuvaluan"},{"value":"Ukrainian"},{"value":"Umbundu"},{"value":"Urdu"},{"value":"Uzbek"},{"value":"Vietnamese"},

@@ -138,8 +138,7 @@ setTimeout(function () {
     // If there is a country and a new language is selected (changed): Retrieve the data
     document.getElementById("appLanguage").addEventListener("change", changeEvents, false);
     // Save Button is selected
-    document.getElementById("id_SaveStartupValues").addEventListener("click", clickedSaveButton, false);
-    getAllApplicationLanguageData();
+    document.getElementById("id_SaveStartupValues").addEventListener("click", clickedSaveButton, false);  
 }, 250);
 
 function clickedSaveButton(event)
@@ -266,11 +265,7 @@ function setTheTable(htmlTableWithTexts)
 // saving this Application Language
 function saveApplicationLanguageData()
 {
-    var applicationLanguageBasedId;
-    if (document.getElementById("appLanguageToUseB").value.lastIndexOf("appLanguageToUseOption") != -1) {
-        applicationLanguageBasedId = document.getElementById("appLanguageToUseB").value.substring(22);
-    }
-    else applicationLanguageBasedId = 999;
+    var applicationLanguageBasedId = 999;
     var xhttpsaveTagsData = new XMLHttpRequest();
     var dataWorlds = new FormData();
     getTagIdTextsArray();
@@ -395,31 +390,6 @@ function resetEntry()
         appLanguageInstructionTable.classList.remove("displayNone");
     if (!appLanguageDataTable.classList.contains("displayNone"))
         appLanguageDataTable.classList.add("displayNone");
-}
-
-// Retrieve the Application Data Language (if any) and Set Up the Selected Application Language Data for the Page
-function getAllApplicationLanguageData()
-{
-    // Get All the Language Data from the database (if any)
-    var xhttploadTagsAllData = new XMLHttpRequest();
-    // On Ready State Change
-    xhttploadTagsAllData.onreadystatechange = function()
-    {
-        if (xhttploadTagsAllData.readyState == 4 && xhttploadTagsAllData.status == 200)
-        {
-            var allValues = JSON.parse(xhttploadTagsAllData.responseText);
-            var allValuesInAString = ""; // a string
-            for (var oneValue in allValues) {
-                // here Each world will be lowercase except the first letter will be uppercase...
-
-                allValuesInAString += '"' + allValues[oneValue]["this_language_feature_value"] + '",';
-            }
-            console.log(allValuesInAString);
-        }
-    };
-    xhttploadTagsAllData.open("GET", "/ajax/dataSeeder", true);
-    // Start the Ajax Communication (call PHP program through Route => Controller)
-    xhttploadTagsAllData.send();
 }
 
 /*
