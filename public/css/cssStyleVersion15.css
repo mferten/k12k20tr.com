@@ -196,43 +196,58 @@ li a:hover {
     box-shadow: .1rem .3rem .5rem .2rem #eab358;
 }
 
-/* drop down menu starts */
+/* drop down language menu or left/right show description starts (based on W3School) */
 .dropbtn {
-  background-color: #190623;
-  min-width: 10rem;
-  color: #eab358;
-  font-size: 1rem;
-  border: none;
+    background-color: #190623;
+    min-width: 10rem;
+    color: #eab358;
+    font-size: 1rem;
+    border: none;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
-  text-align: left;
+    position: relative;
+    display: inline-block;
+    text-align: left;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 10rem;
-  box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2);
-  z-index: 1;
+.dropdown-content, .dropdown-content-left-description, .dropdown-content-right-description {
+    display: none;
+    position: absolute;
+    background-color: papayaWhip;
+    min-width: 10rem;
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2);
+    z-index: 3; /* table headings using 2 */
+    color: #190623;
+    min-width: 10rem;
 }
 
 .dropdown-content a {
-  min-width: 9rem;
-  color: black;
-  padding: .2rem 1rem;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: .2rem 1rem;
+    text-decoration: none;
+    display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content-left-description a, .dropdown-content-right-description a {
+    color: black;
+    padding: .2rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover, .dropdown-content-left-description a:hover, .dropdown-content-right-description a:hover {
+      background-color: #ddd;
+ }
 
 .dropdown:hover .dropdown-content {display: block;}
 
+.dropdown:hover .dropdown-content-left-description {display: inline-block; transform: translateX(5rem);}
+
+.dropdown:hover .dropdown-content-right-description {display: inline-block; transform: translateX(-18rem);}
+
 .dropdown:hover .dropbtn {background-color: #190623;}
+
 
 .dropdownFlag {
     width: 1.5rem;
@@ -247,7 +262,18 @@ li a:hover {
     font-size: 1.05rem;
     color: #eab358;
 }
-/* drop down menu ends */
+
+.dropDownPBorder {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: .4rem;
+    border-width: .4rem;
+    background-color: papayaWhip;
+    color: #190623;
+    margin: .4rem;
+}
+
+/* drop down menu and show right/left description end */
 
 .marginOnSidesABit {
     margin: 0 .3rem;
@@ -493,7 +519,7 @@ li a:hover {
     font-size: 1.1rem;
 }
 
-.countryInformationLabelState {
+.countryInformationLabelState, .countryPanel {
     color: #eab358;
 }
 
@@ -695,7 +721,6 @@ li a:hover {
 }
 
 .countryPanel {
-    color: #bcbb6d;
     padding: .3rem;
     border-bottom: solid #190623 .1rem;
     box-shadow: .1rem .12rem #888888;
@@ -770,6 +795,7 @@ li a:hover {
 
 .languageInput {
     width: 100%;
+    height: 5rem;
 }
 
 #id_LanguageImplementedBy, #id_CopyRight {
@@ -995,11 +1021,6 @@ li a:hover {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .myInfoPage {
         grid-template-columns: 25% calc(50% - .4rem) 25%;
-        margin: auto 1%;
-    }
-
-    .myInfoPageCountryList {
-        grid-template-columns: 20% calc(60% - .4rem) 20%;
         margin: auto 1%;
     }
 

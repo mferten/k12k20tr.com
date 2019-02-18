@@ -293,7 +293,7 @@ function saveApplicationLanguageTexts()
 
 // Retrieve (if any) and Set Up the Selected Application Language Texts for the Page
 function getThisApplicationLanguageTexts()
-{
+{ 
     // Get the New Language Texts from the database
     var xhttploadTagsTexts = new XMLHttpRequest();
     // into an Array of "tag" => "text"

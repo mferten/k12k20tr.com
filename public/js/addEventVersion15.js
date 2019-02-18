@@ -276,7 +276,7 @@ function processOneSelection(oneCountryFlag, selectionIdOrOneCountry)
         startUpCountryName = allCountryNames[key];
         var countryTwoDigitsCode = countryTwoDigitsCodeWithName[startUpCountryName];
         if (oneCountryFlag && oneCountry == startUpCountryName ||
-            !oneCountryFlag && jsonFilteredCountryNames[startUpCountryName]) { // selected Country: OK to show
+            !oneCountryFlag && jsonFilteredCountryNames && jsonFilteredCountryNames[startUpCountryName]) { // selected Country: OK to show
             (function(twoDigit, countryName) {
                 setTimeout(function() {
                     if (oneCountryFlag) { } // do no saving

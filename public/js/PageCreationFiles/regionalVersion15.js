@@ -99,9 +99,9 @@ function finalizeRegionalPage() {
     rightLabelAndMainElementCodes(flagControllDivElement, mainElement, formDivElement);
     worldMap = simplemaps_worldmap.create();
     worldMap.mapdata.main_settings.initial_zoom = regionNumbers[startupValuesJSONObject.region];
+    regionalGlobalInitialization();
     worldMap.load();
     // process next time: otherwise start up time, the map will be loaded twice
-    worldMapLoaded = false; // will stay false all the time
-    regionalGlobalInitialization();
+    worldMapLoaded = false; // will stay false all the time    
     setNavFooterTags("Surfing");
 }

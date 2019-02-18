@@ -10,7 +10,7 @@ setTimeout(function () {
     importAnExternalJSFileIfNotYetWithNoProcessing("Worldmap", "js/worldmap.js");
 
     initializationUtilityForFlags();
-    
+
     if (typeof allCountryNames == 'undefined') // text or data lanageues.js may define this variable
         allCountryNames = getAllCountriesNames();
     if (typeof allCountryFullNames == 'undefined') // text or data lanageues.js may define this variable
@@ -139,11 +139,12 @@ function finalizeGlobalPage() {
     rightLabelAndMainElementCodes(flagControllDivElement, mainElement, formDivElement);
     // Some of the Select Option Values will be retrieved from Server (AJAX calls)
     setSelectOptionsFromServerData();
-    setCombineValueCodes("was here");
+    setCombineValueCodes();
     // create SimpleMaps World Map
     worldMap = simplemaps_worldmap.create();
+    regionalGlobalInitialization();
     // only one region in World view map: 0, all countries in it
     worldMap.load();
-    regionalGlobalInitialization();
     setNavFooterTags("Searching");
+    countrySelectableFeatureLocation = countrySelectableFeatureLocationApple; // Apple IOS less criteria
 }

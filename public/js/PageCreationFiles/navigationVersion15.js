@@ -34,7 +34,7 @@ function createNavigationTags(navElement)
         createOneNavItemBlank(navUlElement);
         // Application Text Languages
         // only k12k20.com will show The Application Text and Data Langauge Maintenance
-        if (window.location.hostname.toUpperCase() == "K12K20SK.flagOfCountriesFullName" || window.location.hostname.toUpperCase() == "K12K20TR.LOC"
+        if (window.location.hostname.toUpperCase() == "WWW.K12K20TR.LOC" || window.location.hostname.toUpperCase() == "K12K20SK.TR"
             || window.location.hostname.toUpperCase() == "K12K20.LOC")
         {
             createOneNavItem("workWithApplicationTextLanguage","appLanguageSel","id_TextLanguages","TextLanguages",navUlElement,navElement,whereNav);

@@ -105,6 +105,13 @@ var pageHeaderI18n = {"Text Languages":"id_TextLanguages", "Data Languages":"id_
 
 var applicationHrefs = {1:"http://www.k12k20.com/",2:"http://www.k12k20tr.com/",3:"http://www.k12k20sk.com/"};
 
+var boldLinkCategories = {"TravelWarning":"TravelWarning","TimeAndDate":"TimeAndDate","GoogleMap":"GoogleMap","Government":"Government",
+    "Tourism":"Tourism","Weather":"Weather","WikiCountry":"WikiCountry","CIACountry":"CIACountry"}
+
+var noDropDownDescription = {"LifeExpectancy":"LifeExpectancy","UNCountry":"UNCountry","Income":"Income","LandArea":"LandArea",
+    "Population":"Population","Overweight":"Overweight","Currency":"Currency","DrivingSide":"DrivingSide"}
+
+
 // ****     2- Functions     ******
 
 // execute this method for each Page requires this external JS file (acts af if it just opened for the requested SPA page)
@@ -145,35 +152,35 @@ function eWorldMenuSetup() {
 // rename one CSS file individually
 
 function eWorldGlobalSetup() {
-    importAnExternalJSFile("id_Searching", "js/PageCreationFiles/globalVersion14.js", "Searching"); // import a javascript external file
+    importAnExternalJSFile("id_Searching", "js/PageCreationFiles/globalVersion15.js", "Searching"); // import a javascript external file
 }
 
 function eWorldRegionalSetup() {
-    importAnExternalJSFile("id_Surfing", "js/PageCreationFiles/regionalVersion14.js", "Surfing"); // import a javascript external file
+    importAnExternalJSFile("id_Surfing", "js/PageCreationFiles/regionalVersion15.js", "Surfing"); // import a javascript external file
 }
 
 function eWorldCountriesSetup() {
-    importAnExternalJSFile("id_Countries", "js/PageCreationFiles/countryCodesSetupVersion14.js", "CountryCodes"); // import a javascript external file
+    importAnExternalJSFile("id_Countries", "js/PageCreationFiles/countryCodesSetupVersion15.js", "CountryCodes"); // import a javascript external file
 }
 
 function eWorldStartupSetup(  ) {
-    importAnExternalJSFile("id_Register", "js/PageCreationFiles/registerSetupVersion14.js", "Register"); // import a javascript external file
+    importAnExternalJSFile("id_Register", "js/PageCreationFiles/registerSetupVersion15.js", "Register"); // import a javascript external file
 }
 
 function eWorldCitationsSetup() {
-    importAnExternalJSFile("id_Citations", "js/PageCreationFiles/citationsVersion14.js", "Citations"); // import a javascript external file
+    importAnExternalJSFile("id_Citations", "js/PageCreationFiles/citationsVersion15.js", "Citations"); // import a javascript external file
 }
 
 function eWorldAboutSetup() {
-    importAnExternalJSFile("id_AboutMe", "js/PageCreationFiles/aboutMeVersion14.js", "AboutMe"); // import a javascript external file
+    importAnExternalJSFile("id_AboutMe", "js/PageCreationFiles/aboutMeVersion15.js", "AboutMe"); // import a javascript external file
 }
 
 function eWorldTextLanguagesSetup() {
-    importAnExternalJSFile("id_TextLanguages", "js/PageCreationFiles/textLanguagesVersion14.js", "TextLanguages"); // import a javascript external file
+    importAnExternalJSFile("id_TextLanguages", "js/PageCreationFiles/textLanguagesVersion15.js", "TextLanguages"); // import a javascript external file
 }
 
 function eWorldDataLanguagesSetup() {
-    importAnExternalJSFile("id_DataLanguages", "js/PageCreationFiles/dataLanguagesVersion14.js", "DataLanguages"); // import a javascript external file
+    importAnExternalJSFile("id_DataLanguages", "js/PageCreationFiles/dataLanguagesVersion15.js", "DataLanguages"); // import a javascript external file
 }
 
 function isAppleProduct()
@@ -239,7 +246,8 @@ function setApplicationLanguage(languageId) // Dynamic data: a user can add and 
         {
             if (xhttploadTagsTexts.responseText != "no row")
             {
-                selectedApplicationLanguageTexts = JSON.parse(xhttploadTagsTexts.responseText); // Application Language Texts
+                console.log(encodeURIComponent(JSON.stringify(xhttploadTagsTexts.responseText)));
+                selectedApplicationLanguageTexts = JSON.parse(xhttploadTagsTexts.responseText); // Application Language Texts   dfg
             }
         }
     }
@@ -440,21 +448,8 @@ function getAPTagWithASpanElement(spanID, spanClass, spanText, spanTextId, spanT
     return pElement;
 }
 
-function createCountryInformationLabels (elementTag, infoIds, classes)
+function createCountryInformationLabels (elementTag, infoIds, classes, leftFlag)
 {
-    var addTitleForCriteria = { "CleanWater":["From UN (last link on the right)",
-        "\nPopulation using improved drinking water\n-- urban/rural, % \nEnvironment and infrastructure indicators"],
-        "CleanToilet":["From UN (last link on the right)","\nPopulation using improved sanitation facilities\n-- urban/rural, % \nEnvironment and infrastructure indicators"],
-        "Cell":["From UN (last link on the right)","\nMobile-cellular subscriptions\n-- per 100 inhabitants \nEnvironment and infrastructure indicators"],
-        "RandD":["From UN (last link on the right)","\nResearch & Development expenditure\n-- % of GDP \nEnvironment and infrastructure indicators"],
-        "Internet":["From UN (last link on the right)","\nIndividuals using the Internets \n-- per 100 inhabitants \nEnvironment and infrastructure indicators"],
-        "SexRatio":["From UN (last link on the right)","\nSex ratio \n-- male per 100 female, 2017 \nGeneral Information"],
-        "SeatRatio":["From UN (last link on the right)","\nSeats held by women in national parliaments \n-- % \nSocial indicators"],
-        "UNCountry": ["United Nations","\nhttp://data.un.org/en/"]};
-
-    var boldLinkCategories = {"UNCountry":"UNCountry","TravelWarning":"TravelWarning","TimeAndDate":"TimeAndDate","GoogleMap":"GoogleMap","Government":"Government",
-        "Tourism":"Tourism","Weather":"Weather","WikiCountry":"WikiCountry","CIACountry":"CIACountry"}
-
     for (var key in infoIds)
     {
         var oneInfoValue = infoIds[key];
@@ -464,18 +459,35 @@ function createCountryInformationLabels (elementTag, infoIds, classes)
         oneInfoAnchor.setAttribute("target", "_blank");
         var oneInfoSpan = document.createElement("span");
         oneInfoAnchor.setAttribute("id", "info_" + oneInfoValue);
-        oneInfoAnchor.setAttribute("class", classes);
+        oneInfoAnchor.setAttribute("class", classes + " dropdown");
         var oneInfoSpanTextSpan = getASpanElement("id_" + oneInfoValue + "Display", (boldLinkCategories[oneInfoValue]?
             "countryInformationLabelState marginPointPoint2Rem makeBold":"countryInformationLabelState marginPointPoint2Rem"),
             selectedApplicationLanguageTexts["id_" + oneInfoValue + "Display"]);
         var oneInfoSpanTwoTextSpan = getASpanElement("id_Display" + oneInfoValue, "countryInformationLabelStateDisplay", "");
-        if (addTitleForCriteria[oneInfoValue])
-        {
-            oneInfoSpanTextSpan.setAttribute("title", addTitleForCriteria[oneInfoValue][0] + " " + addTitleForCriteria[oneInfoValue][1]);
-            oneInfoSpanTextSpan.classList.add("titledTag");
-        }
         oneInfoSpan.appendChild(oneInfoSpanTextSpan);
         oneInfoAnchor.appendChild(oneInfoSpan);
+        // add the Dropdown Description
+        if (boldLinkCategories[oneInfoValue]) {} // no Show Description only a Href Link
+        else {
+            if (noDropDownDescription[oneInfoValue] || iPhone) {} // skip these or iPhone: no need to have a Show Description
+            else {
+                var oneInfoSpanDDDescription;
+                if (leftFlag) oneInfoSpanDDDescription =
+                    getASpanElement("id_DisplayDDD" + oneInfoValue, "dropdown-content-left-description dropDownPBorder", myUndefined);
+                else oneInfoSpanDDDescription = getASpanElement("id_DisplayDDD" + oneInfoValue, "dropdown-content-right-description dropDownPBorder", myUndefined);
+                var oneCriteriaDDDLines = selectedApplicationLanguageTexts["id_" + oneInfoValue + "DM"];
+                if (oneCriteriaDDDLines) {
+                    oneCriteriaDDDLines = oneCriteriaDDDLines.split("<p>");
+                    for (var onePLine in oneCriteriaDDDLines) {
+                        var onePDescriptionTag = document.createElement("p");
+                        onePDescriptionTag.setAttribute("class", "marginOnSidesABit");
+                        onePDescriptionTag.innerHTML = oneCriteriaDDDLines[onePLine];
+                        oneInfoSpanDDDescription.appendChild(onePDescriptionTag);
+                    }
+                }
+                oneInfoAnchor.appendChild(oneInfoSpanDDDescription);
+            }
+        }
         oneInfoAnchor.appendChild(oneInfoSpanTwoTextSpan);
         elementTag.appendChild(oneInfoAnchor);
     }
@@ -724,8 +736,10 @@ function addApplicationLanguageSelectionDropDownBox(addIntoTag) // See Global on
     var dropDownButton = document.createElement("button");
     dropDownButton.setAttribute("class", "dropbtn");
     dropDownButton.setAttribute("type", "button");
-    createAnImageInA(dropDownButton, DEFAULTLANGUAGE,
-        DEFAULTCOUNTRY, DEFAULTURL, "dropDownFlagText", true);
+    setTimeout(function() {
+        createAnImageInA(dropDownButton, DEFAULTLANGUAGE,
+            DEFAULTCOUNTRY, DEFAULTURL, "dropDownFlagText", true);
+    }, 100);
     dropDownTopDiv.appendChild(dropDownButton);
     var dropDownInnerDiv = document.createElement("div");
     dropDownInnerDiv.setAttribute("class", "dropdown-content");
@@ -1109,18 +1123,34 @@ function setTheZoom(countryLandArea)
 function hideWithTitle(element)
 {
     var text = element.innerHTML;
-    element.setAttribute("title", ""); // clear if any
-    if (text.indexOf(" and ") > 0)
-    {
-      element.innerHTML = text.substring(0, text.indexOf(" and ")) + "...";
-      element.setAttribute("title", text);
+    var dropDownDescription = document.getElementById("id_DisplayDDD" + element.getAttribute("id").substring(10));
+    if (dropDownDescription) {
+        if (text.indexOf(",") > 0)
+        {
+            element.innerHTML = text.substring(0, text.indexOf(",")) + "...";
+            addShowDescription (dropDownDescription);
+            dropDownDescription.innerHTML = text;
+        }
+        else if (text.indexOf(selectedApplicationLanguageTexts["id_And"].toLowerCase()) > 0)
+        {
+            element.innerHTML = text.substring(0, text.indexOf(selectedApplicationLanguageTexts["id_And"].toLowerCase())) + "...";
+            addShowDescription (dropDownDescription);
+            dropDownDescription.innerHTML = text;
+        }
+        else {
+            removeShowDescription (dropDownDescription);
+        }
     }
-    // Can have both " and " and ",": check both
-    if (text.indexOf(",") > 0)
-    {
-        element.innerHTML = text.substring(0, text.indexOf(",")) + "...";
-        element.setAttribute("title", text);
-    }
+}
+
+function addShowDescription (dropDownDescription) {
+    if (!dropDownDescription.getAttribute("class"))
+        dropDownDescription.setAttribute("class", "dropdown-content-left-description dropDownPBorder");
+}
+
+function removeShowDescription (dropDownDescription) {
+    if (dropDownDescription.getAttribute("class"))
+        dropDownDescription.removeAttribute("class");
 }
 
 function showUNReportedExtraFields(featuresOfEachCountry)
