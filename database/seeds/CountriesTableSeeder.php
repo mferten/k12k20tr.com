@@ -18,7 +18,7 @@ class CountriesTableSeeder extends Seeder
         # Short Name for Application language
         $shortCountryNames =
         [
-            "Afghanistan" => "Afghanistan",
+            "Afghanistan" => "Afganistan",
           	"AlandIslands" => "Aland",
           	"Albania" => "Arnavutluk",
           	"Algeria" => "Cezayir",
@@ -275,7 +275,7 @@ class CountriesTableSeeder extends Seeder
         # Long Name for Congratulation Panel
         $longCountryNames =
         [
-            "Afghanistan" => "Afghanistan",
+            "Afghanistan" => "Afganistan",
             "AlandIslands" => "Aland Adası",
             "Albania" => "Arnavutluk",
             "Algeria" => "Cezayir",
