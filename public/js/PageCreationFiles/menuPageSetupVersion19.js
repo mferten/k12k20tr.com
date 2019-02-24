@@ -2,10 +2,10 @@
 
 var currentEWorldPage = "Menu"; // this should be up here all the time to work again from the menu (after the first time)
 
-importAnExternalUtilityJSFile("UtilityForAll", "js/utilityForAllVersion18.js");
-importAnExternalUtilityJSFile("UtilityForFlag", "js/utilityForFlagsVersion18.js");
-importAnExternalUtilityJSFile("WorldFlags", "js/OneCountryLanguageTextJSFiles/worldFlags.js");
-importAnExternalUtilityJSFile("SVGFiles", "js/OneCountryLanguageTextJSFiles/flagsSVGFilesVersion18.js");
+importAnExternalUtilityJSFile("UtilityForAll", "js/utilityForAllVersion19.js");
+importAnExternalUtilityJSFile("UtilityForFlag", "js/utilityForFlagsVersion19.js");
+importAnExternalUtilityJSFile("WorldFlags", "js/OneCountryLanguageTextJSFiles/worldFlagsVersion19.js");
+importAnExternalUtilityJSFile("SVGFiles", "js/OneCountryLanguageTextJSFiles/flagsSVGFilesVersion19.js");
 
 function finalizeMenuPage() {
 

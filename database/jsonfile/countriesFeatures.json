@@ -744,7 +744,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -1227,12 +1227,8 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Antartik ve Pasifik (Büyük) Okyanus ",
-		"feature": "WaterDisplay",
-		"comment": ""
-	}, {
-		"value": "Hiristiyanlık",
-		"feature": "Religion",
+		"value": "Atlantic Ocean",
+		"feature": "Water",
 		"comment": ""
 	}, {
 		"value": "95.9",
@@ -1278,14 +1274,6 @@
 		"value": 14564,
 		"feature": "GDP",
 		"comment": ""
-	}, {
-		"value": "Antartik",
-		"feature": "Water",
-		"comment": "Okyanus"
-	}, {
-		"value": "Pasifik (Büyük)",
-		"feature": "Water",
-		"comment": "Okyanus"
 	}, {
 		"value": "Buenos Aires",
 		"feature": "CapitalCitiesPopulationDisplay",
@@ -2181,7 +2169,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -3356,7 +3344,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Gine Körfezi ve Atlas Okyanus ",
+		"value": "Gine Körfezi ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -3412,7 +3400,7 @@
 		"feature": "Water",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -3521,7 +3509,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -4667,7 +4655,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -5870,7 +5858,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Gulf of Gine ve Atlas Okyanus ",
+		"value": "Gulf of Gine ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -5926,7 +5914,7 @@
 		"feature": "Water",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -6047,7 +6035,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Pasifik (Büyük), Arktik ve Atlas Okyanus ",
+		"value": "Pasifik (Büyük), Arktik ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -6107,7 +6095,7 @@
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -6216,7 +6204,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -6610,7 +6598,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -7141,7 +7129,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Pasifik (Büyük) ve Atlas Okyanus ",
+		"value": "Pasifik (Büyük) ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -7197,7 +7185,7 @@
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -7817,7 +7805,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -8565,7 +8553,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Karayip Deniz ve Atlas Okyanus ",
+		"value": "Karayip Deniz ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -8621,7 +8609,7 @@
 		"feature": "Water",
 		"comment": "Deniz"
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -9358,7 +9346,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": ""
 	}, {
@@ -9821,7 +9809,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Gine Körfezi ve Atlas Okyanus ",
+		"value": "Gine Körfezi ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -9877,7 +9865,7 @@
 		"feature": "Water",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -10175,7 +10163,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -11687,7 +11675,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Gulf of Gine ve Atlas Okyanus ",
+		"value": "Gulf of Gine ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -11743,7 +11731,7 @@
 		"feature": "Water",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -12427,7 +12415,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": ""
 	}, {
@@ -13179,7 +13167,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": ""
 	}, {
@@ -13666,7 +13654,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -13815,7 +13803,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -14298,7 +14286,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Gine Körfezi ve Atlas Okyanus ",
+		"value": "Gine Körfezi ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -14354,7 +14342,7 @@
 		"feature": "Water",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -14640,7 +14628,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Arktik ve Atlas Okyanus ",
+		"value": "Arktik ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -14696,7 +14684,7 @@
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -15400,7 +15388,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -15549,7 +15537,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -15722,7 +15710,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -15891,7 +15879,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Karayip Deniz ve Atlas Okyanus ",
+		"value": "Karayip Deniz ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -15943,7 +15931,7 @@
 		"feature": "GDP",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -16144,7 +16132,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Pasifik (Büyük) ve Atlas Okyanus ",
+		"value": "Pasifik (Büyük) ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -16200,7 +16188,7 @@
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -16591,7 +16579,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Arktik ve Atlas Okyanus ",
+		"value": "Arktik ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -16647,7 +16635,7 @@
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -17592,7 +17580,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Atlas Okyanus, Kelt ve İrlanda Denizleri ",
+		"value": "Atlantik Okyanus, Kelt ve İrlanda Denizleri ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -17644,7 +17632,7 @@
 		"feature": "GDP",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -18107,7 +18095,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas Okyanus ve Karayip Deniz ",
+		"value": "Atlantik Okyanus ve Karayip Deniz ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -18159,7 +18147,7 @@
 		"feature": "GDP",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -20228,7 +20216,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -22490,7 +22478,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -24035,7 +24023,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas Okyanus ve Akdeniz Deniz ",
+		"value": "Atlantik Okyanus ve Akdeniz Deniz ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -24087,7 +24075,7 @@
 		"feature": "GDP",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -24582,7 +24570,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -25930,7 +25918,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Gulf of Gine ve Atlas Okyanus ",
+		"value": "Gulf of Gine ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -25986,7 +25974,7 @@
 		"feature": "Water",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -26566,11 +26554,11 @@
 		"feature": "CapitalCities",
 		"comment": "https://en.wikipedia.org/wiki/Oslo"
 	}, {
-		"value": "Norveçli",
+		"value": "Norveççe",
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Norveçli ve Kuzey Denizleri ",
+		"value": "Norveççe ve Kuzey Denizleri ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -26622,7 +26610,7 @@
 		"feature": "GDP",
 		"comment": ""
 	}, {
-		"value": "Norveçli",
+		"value": "Norveççe",
 		"feature": "Water",
 		"comment": "Deniz"
 	}, {
@@ -28348,7 +28336,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -28529,7 +28517,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Atlas Okyanus ve Karayip Deniz ",
+		"value": "Atlantik Okyanus ve Karayip Deniz ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -28581,7 +28569,7 @@
 		"feature": "GDP",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -29784,7 +29772,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Kara, Hazar, Baltık, Barent, Norveçli, Kara, Laptev, East Siberian, Chukchi, Bering Denizleri, Deniz of Okhotsk ve Deniz of Japonya, Arktik ve Pasifik (Büyük) Okyanus ",
+		"value": "Kara, Hazar, Baltık, Barent, Norveççe, Kara, Laptev, East Siberian, Chukchi, Bering Denizleri, Deniz of Okhotsk ve Deniz of Japonya, Arktik ve Pasifik (Büyük) Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -29852,7 +29840,7 @@
 		"feature": "Water",
 		"comment": "Deniz"
 	}, {
-		"value": "Norveçli",
+		"value": "Norveççe",
 		"feature": "Water",
 		"comment": "Deniz"
 	}, {
@@ -30170,7 +30158,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Karayip Deniz ve Atlas Okyanus ",
+		"value": "Karayip Deniz ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -30226,7 +30214,7 @@
 		"feature": "Water",
 		"comment": "Deniz"
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -30351,7 +30339,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -30512,7 +30500,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas Okyanus ve Karayip Deniz ",
+		"value": "Atlantik Okyanus ve Karayip Deniz ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -30564,7 +30552,7 @@
 		"feature": "GDP",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -30685,7 +30673,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas Okyanus ve Karayip Deniz ",
+		"value": "Atlantik Okyanus ve Karayip Deniz ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -30737,7 +30725,7 @@
 		"feature": "GDP",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -30991,7 +30979,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -31148,7 +31136,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas Okyanus ve Karayip Deniz ",
+		"value": "Atlantik Okyanus ve Karayip Deniz ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -31200,7 +31188,7 @@
 		"feature": "GDP",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -31663,7 +31651,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -31981,7 +31969,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -32480,7 +32468,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -32834,7 +32822,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Karayip Deniz ve Atlas Okyanus ",
+		"value": "Karayip Deniz ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -32890,7 +32878,7 @@
 		"feature": "Water",
 		"comment": "Deniz"
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -33719,7 +33707,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Atlas ve Hint Okyanus ",
+		"value": "Atlantik ve Hint Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -33807,7 +33795,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -34141,7 +34129,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Atlas Okyanus ve Akdeniz Deniz ",
+		"value": "Atlantik Okyanus ve Akdeniz Deniz ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -34193,7 +34181,7 @@
 		"feature": "GDP",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -34941,7 +34929,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -35110,7 +35098,7 @@
 		"feature": "CapitalCities",
 		"comment": "https://en.wikipedia.org/wiki/Longyearbyen"
 	}, {
-		"value": "Norveçli",
+		"value": "Norveççe",
 		"feature": "Language",
 		"comment": ""
 	}, {
@@ -35448,7 +35436,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Kuzey, Norveçli, Barent ve Baltık Denizleri ",
+		"value": "Kuzey, Norveççe, Barent ve Baltık Denizleri ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -35504,7 +35492,7 @@
 		"feature": "Water",
 		"comment": "Deniz"
 	}, {
-		"value": "Norveçli",
+		"value": "Norveççe",
 		"feature": "Water",
 		"comment": "Deniz"
 	}, {
@@ -36776,7 +36764,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Gine Körfezi ve Atlas Okyanus ",
+		"value": "Gine Körfezi ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -36832,7 +36820,7 @@
 		"feature": "Water",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -37243,7 +37231,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas Okyanus ve Karayip Deniz ",
+		"value": "Atlantik Okyanus ve Karayip Deniz ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -37295,7 +37283,7 @@
 		"feature": "GDP",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -37935,7 +37923,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Karayip Deniz ve Atlas Okyanus ",
+		"value": "Karayip Deniz ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -37991,7 +37979,7 @@
 		"feature": "Water",
 		"comment": "Deniz"
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -38800,7 +38788,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Kuzey, İrlanda Denizleri ve Atlas Okyanus ",
+		"value": "Kuzey, İrlanda Denizleri ve Atlantik Okyanus ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -38860,7 +38848,7 @@
 		"feature": "Water",
 		"comment": "Deniz"
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -39178,7 +39166,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas Okyanus ve Karayip Deniz ",
+		"value": "Atlantik Okyanus ve Karayip Deniz ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -39230,7 +39218,7 @@
 		"feature": "GDP",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -39383,7 +39371,7 @@
 		"feature": "LanguageDisplay",
 		"comment": ""
 	}, {
-		"value": "Arktik, Atlas ve Pasifik (Büyük) Ocean; Gulf of Meksika, Karayip ve Bering Denizleri ",
+		"value": "Arktik, Atlantik ve Pasifik (Büyük) Ocean; Gulf of Meksika, Karayip ve Bering Denizleri ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -39447,7 +39435,7 @@
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -39576,7 +39564,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -40308,7 +40296,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas Okyanus ve Karayip Deniz ",
+		"value": "Atlantik Okyanus ve Karayip Deniz ",
 		"feature": "WaterDisplay",
 		"comment": ""
 	}, {
@@ -40360,7 +40348,7 @@
 		"feature": "GDP",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -40895,7 +40883,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -42754,7 +42742,7 @@
 		"feature": "Language",
 		"comment": ""
 	}, {
-		"value": "Atlas",
+		"value": "Atlantik",
 		"feature": "Water",
 		"comment": "Okyanus"
 	}, {
@@ -43120,7 +43108,7 @@
 		"feature": "CapitalCities",
 		"comment": ""
 	}, {
-		"value": "Norveçli",
+		"value": "Norveççe",
 		"feature": "Language",
 		"comment": ""
 	}, {

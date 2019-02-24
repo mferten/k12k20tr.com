@@ -29,7 +29,7 @@ function fillCountriesMaps()
             if (startUpCountryName)
             {
                 // GL: just to show a color on the top HK and PN don't exist ?
-                if (countryTwoDigitsCode === "GL" || countryTwoDigitsCode === "HK" || countryTwoDigitsCode === "PN") { continue; }
+                if (countryTwoDigitsCode === "HK" || countryTwoDigitsCode === "PN") { continue; }
                 (function(twoDigit, countryName)
                 {
                     setTimeout(function()
@@ -64,6 +64,7 @@ function fillOneCountryMapWithItsFlag(twoDigit, startUpCountryName)
         worldMap.mapdata.state_specific[twoDigit].image_url
             = "data:image/svg+xml," + flagsSVGFiles[startUpCountryName].svg;
         worldMap.mapdata.state_specific[twoDigit].description = countryGreetingTexts[twoDigit];
+        worldMap.mapdata.state_specific[twoDigit].name = fullNameForCountry[startUpCountryName];
         worldMap.mapdata.state_specific[twoDigit].url = "javascript:mapFlagSelected('" + startUpCountryName + "')";
         if (imageSize[twoDigit])
         {
@@ -595,7 +596,7 @@ function selectACountryMap(event)
 function showSmallEntityTourismWebsite(countryName)
 {
     // the Country Name to be displayed:
-    document.getElementById("id_CountryFacts").innerHTML = fullNameForCountry[countryFromId[previousFlag.substring(6)]];
+    document.getElementById("id_CountryFacts").innerHTML = fullNameForCountry[countryNameFromKeyValue[previousFlag.substring(6)]];
     // Retrieve and Display Country Information
     retrieveAndDisplayCountryInformation(countryName);
     var smallEntityGoogleMapParagraph = document.createElement('p');

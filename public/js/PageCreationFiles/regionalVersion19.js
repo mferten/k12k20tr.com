@@ -6,14 +6,14 @@ dashBoardFlag = false;
 removeAnExternalJSFileIfExist("DashBoardmapdata");
 // retrieve the external js files if not open yet
 setTimeout(function () {
-    importAnExternalUtilityJSFile("AfricaFlags", "js/OneCountryLanguageTextJSFiles/africaFlags.js");
-    importAnExternalUtilityJSFile("AsiaFlags", "js/OneCountryLanguageTextJSFiles/asiaFlags.js");
-    importAnExternalUtilityJSFile("EuropeFlags", "js/OneCountryLanguageTextJSFiles/europeFlags.js");
-    importAnExternalUtilityJSFile("NaFlags", "js/OneCountryLanguageTextJSFiles/naFlags.js");
-    importAnExternalUtilityJSFile("OceaniaFlags", "js/OneCountryLanguageTextJSFiles/oceaniaFlags.js");
+    importAnExternalUtilityJSFile("AfricaFlags", "js/OneCountryLanguageTextJSFiles/africaFlagsVersion19.js");
+    importAnExternalUtilityJSFile("AsiaFlags", "js/OneCountryLanguageTextJSFiles/asiaFlagsVersion19.js");
+    importAnExternalUtilityJSFile("EuropeFlags", "js/OneCountryLanguageTextJSFiles/europeFlagsVersion19.js");
+    importAnExternalUtilityJSFile("NaFlags", "js/OneCountryLanguageTextJSFiles/naFlagsVersion19.js");
+    importAnExternalUtilityJSFile("OceaniaFlags", "js/OneCountryLanguageTextJSFiles/oceaniaFlagsVersion19.js");
     importAnExternalUtilityJSFile("Mapdata", "js/mapdata.js");
     importAnExternalUtilityJSFile("Worldmap", "js/worldmap.js");
-    importAnExternalUtilityJSFile("SaFlags", "js/OneCountryLanguageTextJSFiles/saFlags.js");
+    importAnExternalUtilityJSFile("SaFlags", "js/OneCountryLanguageTextJSFiles/saFlagsVersion19.js");
 
     initializationUtilityForFlags();
 }, 50);

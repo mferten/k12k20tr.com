@@ -1,7 +1,7 @@
 'use strict';
 
 
-importAnExternalUtilityJSFile("FlagsShortName", "js/OneCountryLanguageTextJSFiles/flagShortNames.js");
+importAnExternalUtilityJSFile("FlagsShortName", "js/OneCountryLanguageTextJSFiles/languageConversionHelperVersion19.js");
 
 // Application (Page) Name
 currentEWorldPage = "Data Languages";
@@ -477,13 +477,6 @@ function resetEntry()
     if (!appLanguageDataTable.classList.contains("displayNone"))
         appLanguageDataTable.classList.add("displayNone");
 }
-
-var bayAndGulfNamesFromJSON = { "Bay of Bengal":"Bay_of_Bengal", "Bay of Biscay":"Bay_of_Biscay", "Bering Seas":"Bering_Seas",
-    "East China":"East_China", "East Siberian":"East_Siberian", "English Channel":"English_Channel","Gulf of Aden":"Gulf_of_Aden",
-    "Gulf of Aqaba":"Gulf_of_Aqaba", "Gulf of California":"Gulf_of_California","Gulf of Guinea":"Gulf_of_Guinea", "Gulf of Mexico":"Gulf_of_Mexico",
-    "Gulf of Oman":"Gulf_of_Oman", "Gulf of Thailand":"Gulf_of_Thailand","Gulf_of_Thailand and Pacific Ocean":"Gulf of Thailand and Pacific Ocean",
-    "Persian Gulf":"Persian_Gulf", "Sea of Azov":"Sea_of_Azov","Sea of Japan":"Sea_of_Japan", "Sea of Okhotsk":"Sea_of_Okhotsk",
-    "South China":"South_China", "Yellow Sea":"Yellow_Sea" };
 
 /*
     (1) from Feature table all unique words

@@ -3,10 +3,8 @@
 currentEWorldPage = "eWorld Countries"; // this should be up here all the time to work again from the menu (after the first time)
 
 // retrieve the external js files if not open yet
-importAnExternalUtilityJSFile("CountriesTableData", "js/OneCountryLanguageTextJSFiles/countriesTableData.js");
-
-// add this into master.blade.php <script src="js/countryCodes.js"></script> for Table Data
-// add this into master.blade.php <script src="js/oneLanguageSpecificTextAndCodeGeneration.js"> to Create World View or Each Region Flags object.
+importAnExternalUtilityJSFile("CountriesTableData", "js/OneCountryLanguageTextJSFiles/countriesTableDataVersion19.js");
+// importAnExternalUtilityJSFile("CountryCodes", "js/countryCodesVersion19.js"); // re-create the table
 
 initializationUtilityForFlags();
 
@@ -58,7 +56,7 @@ setTimeout(function () {
     var eWorldCountriesTableDiv = document.createElement("div");
     eWorldCountriesTableDiv.setAttribute("id", "id_CountryListMenuDiv");
     eWorldCountriesTableDiv.setAttribute("class", "displayNone");
-    var eWorldCountriesTable = document.createElement("TABLE");
+    var eWorldCountriesTable = document.createElement("table");
     eWorldCountriesTable.setAttribute("id", "id_CountryListMenu");
     eWorldCountriesTable.setAttribute("class", "displayNone");
     // (1) if the Table Data is Saved, to rebuild comment this decodeURI out
@@ -143,7 +141,34 @@ var aToZObject = "%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2
  */
 
 // Controls (events)
+/*  The Turkish counts: I and I, C and Ç, ect are the same (no correct sorting)
 
+A, 26
+B, 25
+C, 7
+D, 4
+E, 9
+F, 11
+G, 17
+H, 7
+İ, 9
+J, 3
+K, 26
+L, 9
+M, 24
+N, 10
+O, 2
+P, 10
+R, 4
+Ş, 19
+T, 14
+Ü, 5
+V, 4
+W, 1
+Y, 4
+Z, 2
+
+ */
 var rowsByLetter = { "id_A":{"start":1,"end":16}, "id_B":{"start":17,"end":38}, "id_C":{"start":39,"end":61}, "id_D":{"start":62,"end":65}, "id_E":{"start":66,"end":74},
     "id_F":{"start":75,"end":82}, "id_G":{"start":83,"end":98}, "id_H":{"start":99,"end":104}, "id_I":{"start":105,"end":113}, "id_J":{"start":114,"end":117},
     "id_K":{"start":118,"end":125}, "id_L":{"start":126,"end":134}, "id_M":{"start":135,"end":157}, "id_N":{"start":158,"end":170}, "id_O":{"start":171,"end":171},

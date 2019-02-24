@@ -195,35 +195,35 @@ function eWorldMenuSetup() {
 // rename one CSS file individually
 
 function eWorldGlobalSetup() {
-    importAnExternalJSFile("id_Searching", "js/PageCreationFiles/globalVersion18.js", "Searching"); // import a javascript external file
+    importAnExternalJSFile("id_Searching", "js/PageCreationFiles/globalVersion19.js", "Searching"); // import a javascript external file
 }
 
 function eWorldRegionalSetup() {
-    importAnExternalJSFile("id_Surfing", "js/PageCreationFiles/regionalVersion18.js", "Surfing"); // import a javascript external file
+    importAnExternalJSFile("id_Surfing", "js/PageCreationFiles/regionalVersion19.js", "Surfing"); // import a javascript external file
 }
 
 function eWorldCountriesSetup() {
-    importAnExternalJSFile("id_Countries", "js/PageCreationFiles/countryCodesSetupVersion18.js", "CountryCodes"); // import a javascript external file
+    importAnExternalJSFile("id_Countries", "js/PageCreationFiles/countryCodesSetupVersion19.js", "CountryCodes"); // import a javascript external file
 }
 
 function eWorldStartupSetup(  ) {
-    importAnExternalJSFile("id_Register", "js/PageCreationFiles/registerSetupVersion18.js", "Register"); // import a javascript external file
+    importAnExternalJSFile("id_Register", "js/PageCreationFiles/registerSetupVersion19.js", "Register"); // import a javascript external file
 }
 
 function eWorldCitationsSetup() {
-    importAnExternalJSFile("id_Citations", "js/PageCreationFiles/citationsVersion18.js", "Citations"); // import a javascript external file
+    importAnExternalJSFile("id_Citations", "js/PageCreationFiles/citationsVersion19.js", "Citations"); // import a javascript external file
 }
 
 function eWorldAboutSetup() {
-    importAnExternalJSFile("id_AboutMe", "js/PageCreationFiles/aboutMeVersion18.js", "AboutMe"); // import a javascript external file
+    importAnExternalJSFile("id_AboutMe", "js/PageCreationFiles/aboutMeVersion19.js", "AboutMe"); // import a javascript external file
 }
 
 function eWorldTextLanguagesSetup() {
-    importAnExternalJSFile("id_TextLanguages", "js/PageCreationFiles/textLanguagesVersion18.js", "TextLanguages"); // import a javascript external file
+    importAnExternalJSFile("id_TextLanguages", "js/PageCreationFiles/textLanguagesVersion19.js", "TextLanguages"); // import a javascript external file
 }
 
 function eWorldDataLanguagesSetup() {
-    importAnExternalJSFile("id_DataLanguages", "js/PageCreationFiles/dataLanguagesVersion18.js", "DataLanguages"); // import a javascript external file
+    importAnExternalJSFile("id_DataLanguages", "js/PageCreationFiles/dataLanguagesVersion19.js", "DataLanguages"); // import a javascript external file
 }
 
 function isAppleProduct()
@@ -1260,29 +1260,6 @@ function setCountryTimeDateWeatherValues(countryName, featuresOfEachCountry)
                     (timeDateOrWeather[featuresOfEachCountry[14]['value']]
                         ?timeDateOrWeather[featuresOfEachCountry[14]['value']].trim().replace(/ /g, "-").replace(/'/g, "")
                             :featuresOfEachCountry[14]['value'].trim().replace(/ /g, "-").replace(/'/g, ""));
-    }
-}
-
-function setCountryWikiValues(countryName)
-{
-    if (stateIsShowing)
-    {
-        document.getElementById("info_WikiCountry").href = "https://en.wikipedia.org/wiki/" + (wikiUSState[countryName]?wikiUSState[countryName]:usStates[countryName]);
-    }
-    else if (countryName == "UnitedStatesofAmerica") document.getElementById("info_WikiCountry").href = "https://en.wikipedia.org/wiki/United_States";
-    else if (countryName == "BonaireSintEustatiusandSaba") document.getElementById("info_WikiCountry").href = "https://en.wikipedia.org/wiki/Bonaire";
-    else if (countryName == "BritishIndianOceanTerritory") document.getElementById("info_WikiCountry").href = "https://en.wikipedia.org/wiki/British_Indian_Ocean_Territory";
-    else if (countryName == "BosniaandHerzegovina") document.getElementById("info_WikiCountry").href = "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina";
-    else if (countryName == "AntiguaandBarbuda") document.getElementById("info_WikiCountry").href = "https://en.wikipedia.org/wiki/Antigua_and_Barbuda";
-    else if (countryName == "SouthGeorgiaAndSouthSandwichIslands") document.getElementById("info_WikiCountry").href =
-                                                                      "https://en.wikipedia.org/wiki/South_Georgia_and_the_South_Sandwich_Islands";
-    else if (countryName == "VaticanCityAndHolySee") document.getElementById("info_WikiCountry").href = "https://en.wikipedia.org/wiki/Vatican_City";
-    else
-    {
-        if (previousFlag != -1 && fullNameForCountry[countryNameFromKeyValue[previousFlag.substring(6)]])
-            document.getElementById("info_WikiCountry").href = "https://en.wikipedia.org/wiki/" +
-                fullNameForCountry[countryNameFromKeyValue[previousFlag.substring(6)]];
-        else document.getElementById("info_WikiCountry").href = "https://en.wikipedia.org/wiki/" + countryName;
     }
 }
 
