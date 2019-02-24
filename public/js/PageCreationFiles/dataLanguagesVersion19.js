@@ -350,7 +350,7 @@ function getThisApplicationLanguageData()
 
 function newLanguageCodeTextGeneration(tagsTextsArray) {
     // create World View Flags
-    // recreateTheFlagsWithNewCountry(false);
+    recreateTheFlagsWithNewCountry(false);
 
     // setApplicationLanguage(2); // get a language Application Text: 1=USA(English) 2=Turkey(Turkish) 3=Slovakia(Slovak) ...
     // console.log(encodeURIComponent(DEFAULTREGIONAPPLICATIONLANGUAGETEXT));
@@ -416,7 +416,7 @@ function convertTheRestFeaturesOfAllCountries(englishToSelectedLanguageJSONObjec
         }
     }
     convertTheComments(englishToSelectedLanguageJSONObject);
-    console.log(JSON.stringify(featuresOfAllCountries));
+    //console.log(JSON.stringify(featuresOfAllCountries));
 }
 
 function convertTheComments(englishToSelectedLanguageJSONObject) {
@@ -1755,7 +1755,7 @@ function recreateTheFlagsWithNewCountry(worldViewFlag) { // True: World, False: 
             oneFlagImageElement.src = "images/SVGCountryFlags/Flag_of_" + oneCountryNameFromArray + ".svg";
         }
         oneFlagImageElement.alt = "Entity: " + oneCountryNameFromArray;
-        oneFlagImageElement.setAttribute("title", allCountryFullNames[countryArrayKeyValue[oneCountryNameFromArray]]); // from country name find the key of 252 full names...
+        oneFlagImageElement.setAttribute("title", fullNameForCountry[oneCountryNameFromArray]);
         if (worldViewFlag == false) { // !worldViewFlag
             oneFlagSpanElement.appendChild(oneFlagImageElement);
             oneFlagSpanElement.appendChild(oneFlagFigCaptionElement);

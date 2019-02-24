@@ -46,12 +46,9 @@ var sixRegionsValues = [  // 0: North America 1: South America 2: Europe 3: Afri
     "RepublicofCongo","Reunion","Rwanda","SaintHelena","SaoTomeandPrincipe","Senegal","Seychelles","SierraLeone","Somalia","SouthAfrica","SouthSudan","Sudan","Tanzania",
     "Togo","Tunisia","Uganda","WesternSahara","Zambia","Zimbabwe"],
 
-    ["Angola","SaintHelena","WesternSahara","Benin","Botswana","BouvetIsland","BurkinaFaso","Burundi","CaboVerde","Chad","Algeria","Djibouti",
-    "EquatorialGuinea","Eritrea","Eswatini","Ethiopia","Morocco","FrenchSouthernandAntarcticLands","Gabon","Gambia","Ghana","Guinea","GuineaBissau",
-    "SouthAfrica","SouthSudan","Cameroon","CanaryIslands","Kenya","Comoros","RepublicofCongo","DemocraticRepublicoftheCongo","CotedIvoire","Lesotho",
-    "Liberia","Libya","Madagascar","Malawi","Mali","Mayotte","Egypt","Mauritania","Mauritius","Mozambique","Namibia","Niger","Nigeria",
-    "CentralAfricanRepublic","Reunion","Rwanda","SaoTomeandPrincipe","Senegal","Seychelles","SierraLeone","Somalia","Sudan","Tanzania",
-    "Togo","Tunisia","Uganda","Zambia","Zimbabwe"],
+    ["AmericanSamoa","Australia","ChristmasIsland","CocosIslands","CookIslands","Fiji","FrenchPolynesia","Guam","HeardIslandandMcDonaldIslands",
+    "Kiribati","MarshallIslands","Micronesia","Nauru","NewCaledonia","NewZealand","Niue","NorfolkIsland","NorthernMarianaIslands","Palau","PapuaNewGuinea","PitcairnIslands",
+    "Samoa","SolomonIslands","Tokelau","Tonga","Tuvalu","UnitedStatesMinorOutlyingIslands","Vanuatu","WallisandFutuna"],
 
     ["Afghanistan","Bahrain","Bangladesh","UnitedArabEmirates","BritishIndianOceanTerritory","Brunei","Bhutan","China","TimorLeste","Indonesia",
     "Philippines","StateofPalestine","SouthKorea","India","HongKong","Iraq","Iran","Israel","Japan","Cambodia","Qatar","Kazakhstan","Kyrgyzstan",
