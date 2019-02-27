@@ -564,6 +564,10 @@ li a:hover {
     font-size: 1.1rem;
 }
 
+.mySuperScript {
+    font-size: .5rem;
+}
+
 .margin1ThirdRem {
     margin: 0.3rem;
 }

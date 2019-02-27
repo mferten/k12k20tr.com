@@ -1229,6 +1229,10 @@
 	}, {
 		"value": "Atlas",
 		"feature": "Water",
+		"comment": "Okyanus"
+	}, {
+		"value": "Hiristiyanlık",
+		"feature": "Religion",
 		"comment": ""
 	}, {
 		"value": "95.9",

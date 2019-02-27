@@ -1,7 +1,7 @@
 'use strict';
 
 
-importAnExternalUtilityJSFile("FlagsShortName", "js/OneCountryLanguageTextJSFiles/languageConversionHelperVersion19.js");
+importAnExternalUtilityJSFile("ConversionHelper", "js/OneCountryLanguageTextJSFiles/languageConversionHelperVersion19.js");
 
 // Application (Page) Name
 currentEWorldPage = "Data Languages";
@@ -700,7 +700,7 @@ var usaAppLanTexts = [ // for Gini: low/medium/high
     'Country: Rwanda','Country: Rwanda',
     'Country: Barthélemy','Country: Saint Barthélemy',
     'Country: St Helena','Country: Saint Helena',
-    'Country: St Kitts','Country: St. Kitts & Nevis',
+    'Country: St Kitts','Country: St. Kitts and Nevis',
     'Country: St Lucia','Country: Saint Lucia',
     'Country: St Martin','Country: Saint Martin',
     'Country: St Pierre','Saint Pierre and Miquelon',

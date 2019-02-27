@@ -988,19 +988,20 @@ function loadAndShowTable(tableTag, htmlTableWithTexts, staticFlag)
         tableTag.classList.remove("displayNone");
 }
 
-function createOneTd(trElement, tdElement, textElement, text, staticFlag, country)
+function createOneTd(trElement, tdElement, textElement, text)
 {
     tdElement = document.createElement("td");
     textElement = document.createTextNode(text);
     tdElement.appendChild(textElement);
     trElement.appendChild(tdElement);
-    if (staticFlag) { }
 }
 
 function createTableRows(htmlTableWithTexts, trElement, tdElement, textElement, columnLocations, tableData, objectType, headings, howManyRows, staticFlag)
 {
     var usedTableRowCount = 0;
     var loop = 1;
+    var aCountryConvertedNativeCountryFullName;
+    var arrayOrJSONCountryName;
     for (var country in tableData) {
         usedTableRowCount++;
         trElement = document.createElement("tr");
@@ -1009,22 +1010,36 @@ function createTableRows(htmlTableWithTexts, trElement, tdElement, textElement, 
         if (staticFlag && usedTableRowCount > howManyRows) trElement.classList.add("displayNone");
         createOneTd(trElement, tdElement, textElement, loop);
         if (objectType != "Object") { // Create a line with Long (Full) Country Name if NOT "Color", "Shape", "Water", "Language", "Religion"
-            if (objectType == "Array") createOneTd(trElement, tdElement, textElement, fullNameForCountry[country], staticFlag, country);
-            else createOneTd(trElement, tdElement, textElement, fullNameForCountry[tableData[country]]);
+            if (objectType == "Array") arrayOrJSONCountryName = country;
+            else arrayOrJSONCountryName = tableData[country];
+            if (arrayOrJSONCountryName.indexOf("|") != -1) { // more than one Capital City
+                arrayOrJSONCountryName = arrayOrJSONCountryName.substring(0, arrayOrJSONCountryName.indexOf("|"));
+            }
+            // will only be active during the Countries Table Creation time for a Language
+            if (typeof countryFromISOLongName != "undefined" && countryFromISOLongName[arrayOrJSONCountryName]) {
+                aCountryConvertedNativeCountryFullName = countryFromISOLongName[arrayOrJSONCountryName];
+            }
+            else
+                aCountryConvertedNativeCountryFullName = fullNameForCountry[arrayOrJSONCountryName];
+            if (fullNameForCountry[aCountryConvertedNativeCountryFullName])
+                aCountryConvertedNativeCountryFullName = fullNameForCountry[aCountryConvertedNativeCountryFullName];
+            createOneTd(trElement, tdElement, textElement, aCountryConvertedNativeCountryFullName);
         }
         if (columnLocations == -999) { // all data will be used: Country Codes
             // get the Country Codes as an Array from JSON object: For the Country Codes Listing
             var codesArray = tableData[country];
             loop++;
             for (var x in codesArray) {
-                createOneTd(trElement, tdElement, textElement, fullNameForCountry[codesArray[x]]);
+                createOneTd(trElement, tdElement, textElement, codesArray[x]);
             }
         }
         else { // only Features with the Column location will be used for the report (table)
             loop++;
+            var colorText = selectedApplicationLanguageTexts["id_Color"].substring(0, selectedApplicationLanguageTexts["id_Color"].indexOf(" "));
+            var shapeText = selectedApplicationLanguageTexts["id_Shape"].substring(0, selectedApplicationLanguageTexts["id_Shape"].indexOf(" "));
             for (var x in columnLocations) {
                 if (columnLocations[x] == -1) createOneTd(trElement, tdElement, textElement,
-                    getFeaturesAsText(featuresOfAllCountries[tableData[country]],(headings[+x + 2].indexOf("Color") != -1)?"Color":"Shape"));
+                    getFeaturesAsText(featuresOfAllCountries[tableData[country]],(headings[+x + 2].indexOf(colorText) != -1)?colorText:shapeText));
                 else if (columnLocations[x] == 0 || columnLocations[x] == 7) {
                     createOneTd(trElement, tdElement, textElement, numberFixedToString(featuresOfAllCountries[tableData[country]][columnLocations[x]]["value"])); }
                 else createOneTd(trElement, tdElement, textElement, featuresOfAllCountries[tableData[country]][columnLocations[x]]["value"]);
@@ -1182,11 +1197,13 @@ function hideWithTitle(element)
 }
 
 function addShowDescription (dropDownDescription) {
-    dropDownDescription.setAttribute("class", "dropdown-content-left-description dropDownPBorder");
+    if (dropDownDescription)
+        dropDownDescription.setAttribute("class", "dropdown-content-left-description dropDownPBorder");
 }
 
 function removeShowDescription (dropDownDescription) {
-    dropDownDescription.setAttribute("class", "displayNone");
+    if (dropDownDescription)
+        dropDownDescription.setAttribute("class", "displayNone");
 }
 
 function showUNReportedExtraFields(featuresOfEachCountry)

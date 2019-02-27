@@ -70,7 +70,7 @@ class ApplicationLanguageDataTableSeeder extends Seeder
         "São Tomé ve Príncipe","Suudi Arabistan","Suudi Arabistan","Senegal","Senegal","Sırbistan","Sırbistan","Seyşeller","Seyşeller",
         "Sierra Leone","Sierra Leone","Singapur","Singapur","Az Marten","Aziz Marten","Slovakya","Slovakya","Slovenya","Slovenya","Solomon",
         "Solomon Adaları","Somali","Somali","Güney Afrika Cumhuriyeti","Güney Afrika Cumhuriyeti","G Gorgiya",
-        "Güney Jorgiya ve GÜney Sandavic Adaları","Güney Kore","Güney Kore","G Sudan","Güney Sudan","İspanya","İspanya","Sri Lanka","Sri Lanka",
+        "Güney Jorgiya ve Güney Sandavic Adaları","Güney Kore","Güney Kore","G Sudan","Güney Sudan","İspanya","İspanya","Sri Lanka","Sri Lanka",
         "Filistin","Filistin Devleti","Sudan","Sudan","Surinam","Surinam","Svalbard","Svalbard ve Jen Mayen","İsveç","İsveç","İsviçre","İsviçre",
         "Suriye","Suriye","Tayvan","Tayvan Cumhuriyeti","Tacikistan","Tacikistan","Tanzanya","Tanzanya","Tayland","Tayland","Doğu Timor",
         "Doğu-Timor","Togo","Togo","Tokelau","Tokelau","Tonga","Tonga","Trinidad","Trinidad ve Tobago","Tunus","Tunus","Türkiye","Türkiye",
