@@ -1,4 +1,4 @@
-'use strict';
+ 'use strict';
 
 // immediately self-evoking function (function () {..} ) ();
 // can have argument as its parameter (function (myParameter) {..} ) (myArgument);
@@ -1035,11 +1035,9 @@ function createTableRows(htmlTableWithTexts, trElement, tdElement, textElement, 
         }
         else { // only Features with the Column location will be used for the report (table)
             loop++;
-            var colorText = selectedApplicationLanguageTexts["id_Color"].substring(0, selectedApplicationLanguageTexts["id_Color"].indexOf(" "));
-            var shapeText = selectedApplicationLanguageTexts["id_Shape"].substring(0, selectedApplicationLanguageTexts["id_Shape"].indexOf(" "));
             for (var x in columnLocations) {
                 if (columnLocations[x] == -1) createOneTd(trElement, tdElement, textElement,
-                    getFeaturesAsText(featuresOfAllCountries[tableData[country]],(headings[+x + 2].indexOf(colorText) != -1)?colorText:shapeText));
+                    getFeaturesAsText(featuresOfAllCountries[tableData[country]],(headings[+x + 2].indexOf("Color") != -1)?"Color":"Shape"));
                 else if (columnLocations[x] == 0 || columnLocations[x] == 7) {
                     createOneTd(trElement, tdElement, textElement, numberFixedToString(featuresOfAllCountries[tableData[country]][columnLocations[x]]["value"])); }
                 else createOneTd(trElement, tdElement, textElement, featuresOfAllCountries[tableData[country]][columnLocations[x]]["value"]);
