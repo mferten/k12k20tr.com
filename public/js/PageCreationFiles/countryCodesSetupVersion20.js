@@ -470,13 +470,12 @@ function finalizeCountriesPage() {
     if (document.getElementById(currentSortIcon+"Text"))
         document.getElementById(currentSortIcon+"Text").classList.add("selectedInputTag");
     //console.log(encodeURIComponent(document.getElementById("id_CountryListMenu").innerHTML)); // (5) // print if not SAVED (to be SAVED)
-    //console.log(encodeURIComponent(document.getElementById("id_Letters26").innerHTML)); // (6) // to save A-Z
+    // console.log(encodeURIComponent(document.getElementById("id_Letters26").innerHTML)); // (6) // to save A-Z
     // id_A to Z and ALL add Click Event for iPhone/iPad
     if (appleProduct) {
-        var letters = ["A", "B", "C", "Ç", "D", "E", "F", "G", "H", "I", "İ", "J", "K", "L", "M", "N", "O", "Ö", "P", "R", "S",
-            "Ş", "T", "U", "Ü", "V", "Y", "Z",'All'];
-        for (var i in letters) {
-            document.getElementById("id_"+letters[i]).addEventListener("click", countryCodesClickEvents, false);
+        for (var indexNo in capitalCitiesOptionTexts) {
+            if (noCountryLetters[capitalCitiesOptionTexts[indexNo]]) { }
+            else document.getElementById("id_"+capitalCitiesOptionTexts[indexNo]).addEventListener("click", countryCodesClickEvents, false);
         }
         for (var ii in showPointer) {
             document.getElementById(ii).addEventListener("click", countryCodesClickEvents, false);
