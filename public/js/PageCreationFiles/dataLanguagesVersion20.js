@@ -1,7 +1,7 @@
 'use strict';
 
 
-importAnExternalUtilityJSFile("ConversionHelper", "js/OneCountryLanguageTextJSFiles/languageConversionHelperVersopm20.js");
+importAnExternalUtilityJSFile("ConversionHelper", "js/OneCountryLanguageTextJSFiles/languageConversionHelperVersion20.js");
 
 // Application (Page) Name
 currentEWorldPage = "Data Languages";

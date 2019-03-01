@@ -18,13 +18,13 @@
         <title>K12K20.com: World SVG Maps & Flags: RCP - SPA</title>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="css/cssStyleVersopm20.css">
-        <script src="js/OneCountryLanguageTextJSFiles/defaultStartupRegionValuesVersopm20.js"></script>
-        <script src="js/OneCountryLanguageTextJSFiles/staticDataForDashboardVersopm20.js"></script>
-        <script src="js/OneCountryLanguageTextJSFiles/languageConfigurationHelperVersopm20.js"></script>        
-        <script src="js/PageCreationFiles/menuPageSetupVersopm20.js"></script>
-        <script src="js/PageCreationFiles/navigationVersopm20.js"></script>
-        <script src="js/addEventVersopm20.js"></script>
-        <script src="js/OneCountryLanguageTextJSFiles/countriesFeaturesVersopm20.js"></script>
+        <link rel="stylesheet" href="css/cssStyleVersion20.css">
+        <script src="js/OneCountryLanguageTextJSFiles/defaultStartupRegionValuesVersion20.js"></script>
+        <script src="js/OneCountryLanguageTextJSFiles/staticDataForDashboardVersion20.js"></script>
+        <script src="js/OneCountryLanguageTextJSFiles/languageConfigurationHelperVersion20.js"></script>        
+        <script src="js/PageCreationFiles/menuPageSetupVersion20.js"></script>
+        <script src="js/PageCreationFiles/navigationVersion20.js"></script>
+        <script src="js/addEventVersion20.js"></script>
+        <script src="js/OneCountryLanguageTextJSFiles/countriesFeaturesVersion20.js"></script>
     </head>
 </html>
