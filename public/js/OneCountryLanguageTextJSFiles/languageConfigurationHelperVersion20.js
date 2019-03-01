@@ -40,12 +40,6 @@ var aToZObject = "%3Cspan%20id%3D%22id_A%22%20class%3D%22selectedInputTag%20aToZ
     SELECT substring(long_name,1,1), count(*) FROM countries group by substring(long_name,1,1) order by long_name
     The Turkish counts: I and I, C and Ç, ect are the same (no correct sorting)
     A, 26 B, 25 C, 7 D, 4 E, 9 F, 11 G, 17 H, 7 İ, 9 J, 3 K, 26 L, 9 M, 24 N, 10 O, 2 P, 10 R, 4 Ş, 19 T, 14 Ü, 5 V, 4 W, 1 Y, 4 Z, 2
-
- use this as base for Slovak
-    "a":"A","á":"Á","ä":"Ä","b":"B","c":"C","č":"Č","d":"D","ď":"Ď","dz":"Dz","dž":"Dž","e":"E","é":"É","f":"F",
-    "g":"G","h":"H","ch":"Ch","i":"I","í":"Í","j":"J","k":"K","l":"L","ĺ":"Ĺ","ľ":"Ľ","m":"M","n":"N","ň":"Ň",
-    "o":"O","ó":"Ó","ô":"Ô","p":"P","q":"Q","r":"R","ŕ":"Ŕ","s":"S","š":"Š","t":"T","ť":" Ť","u":"U","ú":"Ú",
-    "v":"V","w":"W","x":"X","y":"Y","ý":"Ý","z":"Z","ž":"Ž"
 */
 
 var rowsByLetter = { "id_A":{"start":1,"end":26},"id_B":{"start":27,"end":52},"id_C":{"start":53,"end":56},"id_Ç":{"start":57,"end":59},"id_D":{"start":60,"end":63},

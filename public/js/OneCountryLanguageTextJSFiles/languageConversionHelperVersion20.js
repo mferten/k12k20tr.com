@@ -1,5 +1,6 @@
 // these will be used in dataLanguage... to convert the data into a new language
 
+// Turkish is a String but Slovak is an Array 1 or 2 digits
 var alfabe = "AaBbCcÇçDdEeFfGgĞğHhIıİiJjKkLlMmNnOoÖöPpQqRrSsŞşTtUuÜüVvWwXxYyZz0123456789";
 
 var bayAndGulfNamesFromJSON = { "Bay of Bengal":"Bengal Körfezi", "Biscay Körfezi":"Bay_of_Biscay", "Bering Seas":"Bering Denizleri",

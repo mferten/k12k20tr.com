@@ -3,8 +3,8 @@
 currentEWorldPage = "eWorld Countries"; // this should be up here all the time to work again from the menu (after the first time)
 
 // retrieve the external js files if not open yet
-importAnExternalUtilityJSFile("CountriesTableData", "js/OneCountryLanguageTextJSFiles/countriesTableDataVersion19.js");
-// importAnExternalUtilityJSFile("ConversionHelper", "js/OneCountryLanguageTextJSFiles/languageConversionHelperVersion19.js");
+importAnExternalUtilityJSFile("CountriesTableData", "js/OneCountryLanguageTextJSFiles/countriesTableDataVersopm20.js");
+// importAnExternalUtilityJSFile("ConversionHelper", "js/OneCountryLanguageTextJSFiles/languageConversionHelperVersopm20.js");
 
 initializationUtilityForFlags();
 
