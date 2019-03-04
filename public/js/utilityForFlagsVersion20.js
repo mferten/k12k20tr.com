@@ -114,7 +114,7 @@ var countryCategorySharedLinks = {
     "Overweight" : "http://www.who.int/gho/ncd/risk_factors/overweight/en/",
     "LifeExpectancy" : "https://ourworldindata.org/life-expectancy",
     "Religion" : "https://www.cia.gov/library/publications/the-world-factbook/fields/2122.html",
-    "CounryCodes" : "/countryCodes",
+    "CounryCodes" : "/docs/ATTCountryCodeList.pdf",
     "DrivingSide" : "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic",
     "Gini" : "https://www.cia.gov/library/publications/the-world-factbook/rankorder/2172rank.html",
     "HDI" : "http://hdr.undp.org/en/composite/HDI",
