@@ -61,6 +61,7 @@ class ApplicationLanguageTextsTableSeeder extends Seeder
                         'Sex Ratio M per 100 F' => '100 Kadına kaç Erkek',
                         'Seats Held By Women %' => 'Kadınların Mecliste Oranı',
                         // to here these are for the Report Table Title Column Information
+                        'id_ReverseImage'  => 'Tersinden seçim görüntüsü ',
                         'id_And' => 'Ve',
                         'id_Or' => 'Veya',
                         'id_Basics' => 'Temeller',
@@ -265,6 +266,7 @@ class ApplicationLanguageTextsTableSeeder extends Seeder
                         'Sex Ratio M per 100 F' => 'Pomer pohlavia M na 100 Ž',
                         'Seats Held By Women %' => 'Zastúpenie žien vo vláde %',
                         // to here these are for the Report Table Title Column Information
+                        'id_ReverseImage'  => 'Toto je obrátený obrázok ',
                         'id_And' => 'A',
                         'id_Or' => 'Alebo',
                         'id_Basics' => 'Základy',
@@ -468,7 +470,8 @@ class ApplicationLanguageTextsTableSeeder extends Seeder
                         'Driving Side' => 'Driving Side',
                         'Sex Ratio M per 100 F' => 'Sex Ratio M per 100 F',
                         'Seats Held By Women %' => 'Seats Held By Women %',
-                         // to here these are for the Report Table Title Column Information
+                        // to here these are for the Report Table Title Column Information
+                        'id_ReverseImage'  => 'This is a Reverse Image of ',
                         'id_And' => 'And',
                         'id_Or' => 'Or',
                         'id_Basics' => 'Basics',

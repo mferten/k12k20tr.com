@@ -285,6 +285,7 @@ function setApplicationLanguage(languageId) // Dynamic data: a user can add and 
         {
             if (xhttploadTagsTexts.responseText != "no row")
             {
+                // console.log(xhttploadTagsTexts.responseText);
                 console.log(encodeURIComponent(xhttploadTagsTexts.responseText));
                 selectedApplicationLanguageTexts = JSON.parse(xhttploadTagsTexts.responseText); // Application Language Texts   dfg
             }

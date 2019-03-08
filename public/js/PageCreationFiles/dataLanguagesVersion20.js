@@ -352,7 +352,7 @@ function newLanguageCodeTextGeneration(tagsTextsArray) {
     // create World View Flags
     recreateTheFlagsWithNewCountry(false);
 
-    // setApplicationLanguage(2); // get a language Application Text: 1=USA(English) 2=Turkey(Turkish) 3=Slovakia(Slovak) ...
+    setApplicationLanguage(3); // get a language Application Text: 1=USA(English) 2=Turkey(Turkish) 3=Slovakia(Slovak) ...
     // console.log(encodeURIComponent(DEFAULTREGIONAPPLICATIONLANGUAGETEXT));
 
     var englishToSelectedLanguageJSONObject = {};

@@ -38,6 +38,7 @@ class ApplicationI18ntagsTableSeeder extends Seeder
             'Driving Side' => 'id',
             'Sex Ratio M per 100 F' => 'id',
             'Seats Held By Women %' => 'id',
+            'id_ReverseImage'  => 'id',
             'id_CleanWaterDM'  => 'id',
             'id_CleanToiletDM'  => 'id',
             'id_CellDM'  => 'id',

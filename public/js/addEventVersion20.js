@@ -213,7 +213,7 @@ function runReports()
     var headingsArray = ["Count", selectedApplicationLanguageTexts["id_Country"]];
     var selectionValuesAsTitle = ""; // Reverse, Combine: None, And, Or..
     if (document.getElementById("id_RadioCombineReverseSearch").checked)
-        selectionValuesAsTitle = "This is a Reverse Image of ";
+        selectionValuesAsTitle = selectedApplicationLanguageTexts["id_ReverseImage"];
     var combinedFlag = document.getElementById("combineSearch").querySelector('input[name="combine"]:checked').value;
     for (var x in countrySelectableFeatureLocation)
     {
