@@ -101,8 +101,6 @@ setTimeout(function () {
 }, 50);
 
 var processTheseTH = {0:true,1:true,2:true,4:true,5:true,6:true};
-var threeBelongsToOthers = {"UnitedStatesMinorOutlyingIslands":"UnitedStatesofAmerica",
-    "HeardIslandandMcDonaldIslands":"Australia", "BouvetIsland":"Norway" };
 var currentLetter = myUndefined;
 var tableRowsByCapitalCity = {};
 var currentSortIcon;
@@ -140,7 +138,7 @@ function setTheTableRows(tableRows)
             addCodesClassToEachTd(tableRows[oneRow].cells);
             var countryNameFromTD = tableRows[oneRow].cells[1].innerHTML;
             tableRows[oneRow].setAttribute("id", "id_" + oneRow);
-            tableRows[oneRow].setAttribute("name", countryFromISOLongName[countryNameFromTD]?countryFromISOLongName[countryNameFromTD]:countryNameFromTD);
+            tableRows[oneRow].setAttribute("name", countryNameFromLongName[countryNameFromTD]);
             tableRows[oneRow].cells[0].classList.add("displayNone");
             tableRows[oneRow].cells[9].classList.add("displayNone");
             oneFlagImageElement = document.createElement("img");
@@ -149,8 +147,8 @@ function setTheTableRows(tableRows)
             if (countryNameFromTD.indexOf("|") != -1) {
                 countryNameFromTD = countryNameFromTD.substring(0, countryNameFromTD.indexOf("|"));
                 tableRows[oneRow].cells[1].innerHTML = tableRows[oneRow].cells[1].innerHTML.substring(0, tableRows[oneRow].cells[1].innerHTML.indexOf("|"));
-            } // Set the flags
-            if (flagsSVGFiles[countryNameFromTD]) {
+            }
+            if (flagsSVGFiles[countryNameFromTD]) { // Set the flags
                 oneFlagImageElement.src = "data:image/svg+xml," + flagsSVGFiles[countryNameFromTD].svg;
                 setAnIdForAFlag(oneFlagImageElement, countryNameFromTD)
             }
@@ -160,7 +158,7 @@ function setTheTableRows(tableRows)
             }
             else if (threeBelongsToOthers[countryNameFromLongName[countryNameFromTD]]) {
                 oneFlagImageElement.src = "data:image/svg+xml," + flagsSVGFiles[threeBelongsToOthers[countryNameFromLongName[countryNameFromTD]]].svg;
-                setAnIdForAFlag(oneFlagImageElement, threeBelongsToOthers[countryNameFromLongName[countryNameFromTD]]);
+                setAnIdForAFlag(oneFlagImageElement, countryNameFromLongName[countryNameFromTD]);
             }
             else console.log(countryNameFromTD);
             oneFlagImageElement.alt = "Entity: " + countryNameFromTD;
@@ -469,7 +467,7 @@ function finalizeCountriesPage() {
     currentSortIcon = "id_CountryTh";
     if (document.getElementById(currentSortIcon+"Text"))
         document.getElementById(currentSortIcon+"Text").classList.add("selectedInputTag");
-    //console.log(encodeURIComponent(document.getElementById("id_CountryListMenu").innerHTML)); // (5) // print if not SAVED (to be SAVED)
+    // console.log(encodeURIComponent(document.getElementById("id_CountryListMenu").innerHTML)); // (5) // print if not SAVED (to be SAVED)
     // console.log(encodeURIComponent(document.getElementById("id_Letters26").innerHTML)); // (6) // to save A-Z
     // id_A to Z and ALL add Click Event for iPhone/iPad
     if (appleProduct) {

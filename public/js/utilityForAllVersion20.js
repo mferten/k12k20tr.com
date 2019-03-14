@@ -144,6 +144,51 @@ var allCountryLanguages =  {"Afghanistan":"Pashto","AlandIslands":"Swedish","Alb
     "Uruguay":"Spanish","Uzbekistan":"Uzbek","Vanuatu":"Bislama","VaticanCityAndHolySee":"Italian","Venezuela":"Spanish","Vietnam":"Vietnamese","WallisandFutuna":"French",
     "WesternSahara":"Arabic","Yemen":"Arabic","Zambia":"English","Zimbabwe":"English"}
 
+var countryCapitals = {"AlandIslands":"Mariehamn","Albania":"Tirana","Algeria":"Algiers","AmericanSamoa":"Pago Pago","Andorra":"Andorra la Vella",
+"Angola":"Luanda","Anguilla":"The Valley","AntarcticTreatySystem":"N/A-AQ","AntiguaandBarbuda":"Saint John's","Argentina":"Buenos Aires","Armenia":"Yerevan",
+"Aruba":"Oranjestad","Australia":"Canberra","Austria":"Vienna","Azerbaijan":"Baku","Bahamas":"Nassau","Bahrain":"Manama","Bangladesh":"Dhaka",
+"Barbados":"Bridgetown","Belarus":"Minsk","Belgium":"Brussels","Belize":"Belmopan","Benin":"Porto-Novo","Bermuda":"Hamilton","Bhutan":"Thimphu",
+"Bolivia":"La Paz","Bolivia":"Sucre","BonaireSintEustatiusandSaba":"Kralendijk","BosniaandHerzegovina":"Sarajevo","Botswana":"Gaborone",
+"BouvetIsland":"N/A-BV","Brazil":"Brasilia","BritishIndianOceanTerritory":"Camp Justice","BritishVirginIslands":"Road Town","Brunei":"Bandar Seri Begawan",
+"Bulgaria":"Sofia","BurkinaFaso":"Ouagadougou","Burundi":"Bujumbura","CaboVerde":"Praia","Cambodia":"Phnom Penh","Cameroon":"Yaounde","Canada":"Ottawa",
+"CanaryIslands":"Las Palmas","CanaryIslands":"Santa Cruz de Tenerife","CaymanIslands":"George Town","CentralAfricanRepublic":"Bangui","Chad":"N'Djamena",
+"Chile":"Santiago","China":"Beijing","ChristmasIsland":"Flying Fish Cove","CocosIslands":"West Island","Colombia":"Bogota","Comoros":"Moroni",
+"CookIslands":"Avarua","CostaRica":"San Jose","CotedIvoire":"Yamoussoukro","Croatia":"Zagreb","Cuba":"Havana","Curacao":"Willemstad","Cyprus":"Nicosia",
+"Czechia":"Prague","DemocraticRepublicoftheCongo":"Kinshasa","Denmark":"Copenhagen","Djibouti":"Djibouti","Dominica":"Roseau",
+"DominicanRepublic":"Santo Domingo","Ecuador":"Quito","Egypt":"Cairo","ElSalvador":"San Salvador","EquatorialGuinea":"Malabo","Eritrea":"Asmara",
+"Estonia":"Tallinn","Eswatini":"Lobamba","Eswatini":"Mbabane","Ethiopia":"Addis Ababa","FalklandIslands":"Stanley","FaroeIslands":"Tórshavn",
+"Fiji":"Suva","Finland":"Helsinki","France":"Paris","FrenchGuiana":"Cayenne","FrenchPolynesia":"Papeete",
+"FrenchSouthernandAntarcticLands":"Saint-Pierre-TF","Gabon":"Libreville","Gambia":"Banjul","Georgia":"Tbilisi","Germany":"Berlin","Ghana":"Accra",
+"Gibraltar":"Gibraltar","Greece":"Athens","Greenland":"Nuuk","Grenada":"Saint George's","Guadeloupe":"Basse-Terre","Guam":"Hagåtña",
+"Guatemala":"Guatemala City","Guernsey":"St Peter Port","Guinea":"Conakry","GuineaBissau":"Bissau","Guyana":"Georgetown","Haiti":"Port-au-Prince",
+"HeardIslandandMcDonaldIslands":"N/A-HM","Honduras":"Tegucigalpa","HongKong":"Hong Kong","Hungary":"Budapest","Iceland":"Reykjavik",
+"India":"New Delhi","Indonesia":"Jakarta","Iran":"Tehran","Iraq":"Baghdad","Ireland":"Dublin","IsleofMan":"Douglas","Israel":"Jerusalem",
+"Italy":"Rome","Jamaica":"Kingston-JM","Japan":"Tokyo","Jersey":"Saint Helier","Jordan":"Amman","Kazakhstan":"Astana","Kenya":"Nairobi",
+"Kiribati":"Tarawa","Kosovo":"Pristina","Kuwait":"Kuwait City","Kyrgyzstan":"Bishkek","Laos":"Vientiane","Latvia":"Riga","Lebanon":"Beirut",
+"Lesotho":"Maseru","Liberia":"Monrovia","Libya":"Tripoli","Liechtenstein":"Vaduz","Lithuania":"Vilnius","Luxembourg":"Luxembourg","Macau":"Macau",
+"Macedonia":"Skopje","Madagascar":"Antananarivo","Malawi":"Lilongwe","Malaysia":"Kuala Lumpur","Maldives":"Malé","Mali":"Bamako","Malta":"Valletta",
+"MarshallIslands":"Majuro","Martinique":"Fort-de-France","Mauritania":"Nouakchott","Mauritius":"Port Louis","Mayotte":"Mamoudzou","Mexico":"Mexico City",
+"Micronesia":"Palikir","Moldova":"Chișinău","Monaco":"Monaco","Mongolia":"Ulaanbaatar","Montenegro":"Podgorica","Montserrat":"Brades","Morocco":"Rabat",
+"Mozambique":"Maputo","Myanmar":"Nay Pyi Taw","Namibia":"Windhoek","Nauru":"Yaren","Nepal":"Kathmandu","Netherlands":"Amsterdam","NewCaledonia":"Nouméa",
+"NewZealand":"Wellington","Nicaragua":"Managua","Niger":"Niamey","Nigeria":"Abuja","Niue":"Alofi","NorfolkIsland":"Kingston-NF",
+"NorthernMarianaIslands":"Garapan","NorthKorea":"Pyongyang","Norway":"Oslo","Oman":"Muscat","Pakistan":"Islamabad","Palau":"Melekeok",
+"Panama":"Panama City","PapuaNewGuinea":"Port Moresby","Paraguay":"Asunción","Peru":"Lima","Philippines":"Manila","PitcairnIslands":"Adamstown",
+"Poland":"Warsaw","Portugal":"Lisbon","PuertoRico":"San Juan","Qatar":"Doha","RepublicofCongo":"Brazzaville","Reunion":"Saint-Denis",
+"Romania":"Bucharest","RussianFederation":"Moscow","Rwanda":"Kigali","SaintBarthelemy":"Gustavia","SaintHelena":"Jamestown",
+"SaintKittsandNevis":"Basseterre","SaintLucia":"Castries","SaintMartin":"Marigot","SaintPierreandMiquelon":"Saint-Pierre-PM",
+"SaintVincentandGrenadines":"Kingstown","Samoa":"Apia","SanMarino":"San Marino","SaoTomeandPrincipe":"São Tomé","SaudiArabia":"Riyadh",
+"Senegal":"Dakar","Serbia":"Belgrade","Seychelles":"Victoria","SierraLeone":"Freetown","Singapore":"Singapore","SintMaarten":"Philipsburg",
+"Slovakia":"Bratislava","Slovenia":"Ljubljana","SolomonIslands":"Honiara","Somalia":"Mogadishu","SouthAfrica":"Bloemfontein",
+"SouthAfrica":"Cape Town","SouthAfrica":"Pretoria","SouthGeorgiaAndSouthSandwichIslands":"King Edward Point","SouthKorea":"Seoul",
+"SouthSudan":"Juba","Spain":"Madrid","SriLanka":"Colombo","SriLanka":"Sri Jayewardenepura Kotte","StateofPalestine":"East Jerusalem",
+"Sudan":"Khartoum","Suriname":"Paramaribo","SvalbardandJanMayen":"Longyearbyen","Sweden":"Stockholm","Switzerland":"Bern","Syria":"Damascus",
+"Taiwan":"Taipei","Tajikistan":"Dushanbe","Tanzania":"Dodoma","Thailand":"Bangkok","TimorLeste":"Dili","Togo":"Lomé","Tokelau":"Tokelau",
+"Tonga":"Nuku'alofa","TrinidadandTobago":"Port of Spain","Tunisia":"Tunis","Turkey":"Ankara","TurkishRepublicofNorthernCyprus":"North Nicosia",
+"Turkmenistan":"Ashgabat","TurksandCaicosIslands":"Cockburn Town","Tuvalu":"Funafuti","Uganda":"Kampala","Ukraine":"Kyiv","UnitedArabEmirates":"Abu Dhabi",
+"UnitedKingdom":"London","UnitedStatesMinorOutlyingIslands":"NONE","UnitedStatesofAmerica":"Washington, D.C.",
+"UnitedStatesVirginIslands":"Charlotte Amalie","Uruguay":"Montevideo","Uzbekistan":"Tashkent","Vanuatu":"Port Vila","VaticanCityAndHolySee":"Vatican City",
+"Venezuela":"Caracas","Vietnam":"Hanoi","WallisandFutuna":"Matu-Utu","WesternSahara":"El Aaiún","Yemen":"Sana'a","Zambia":"Lusaka","Zimbabwe":"Harare" };
+
 var countryArrayKeyValue = {};
 var countryNameFromKeyValue = {};
 // For Flag objects: set the country names with the sequence number and vice versa: country (252) key (0 to 251)
@@ -1249,7 +1294,8 @@ function setCountryTimeDateWeatherValues(countryName, featuresOfEachCountry)
     if (stateIsShowing)
     {
         document.getElementById("info_TimeAndDate").href = "https://www.timeanddate.com/worldclock/usa/" +
-            (timeDateOrWeather[featuresOfEachCountry[14]['value']]?timeDateOrWeather[featuresOfEachCountry[14]['value']]:featuresOfEachCountry[14]['value'].trim().replace(/ /g, "-"));
+            (timeDateOrWeather[featuresOfEachCountry[14]['value']]?timeDateOrWeather[featuresOfEachCountry[14]['value']]
+                :featuresOfEachCountry[14]['value'].trim().replace(/ /g, "-"));
     }
     else if (timeDateOrWeatherSmallEntities[countryName])
     {
@@ -1258,14 +1304,15 @@ function setCountryTimeDateWeatherValues(countryName, featuresOfEachCountry)
     else
         document.getElementById("info_TimeAndDate").href = "https://www.timeanddate.com/worldclock/" +
             (timeDateOrWeather[countryName]?timeDateOrWeather[countryName]:countryName) + "/" +
-                (timeDateOrWeather[featuresOfEachCountry[14]['value']]
-                    ?timeDateOrWeather[featuresOfEachCountry[14]['value']].trim().replace(/ /g, "-").replace(/'/g, "")
-                        :featuresOfEachCountry[14]['value'].trim().replace(/ /g, "-").replace(/'/g, ""));
+                (timeDateOrWeather[countryCapitals[countryName]]
+                    ?timeDateOrWeather[countryCapitals[countryName]].trim().replace(/ /g, "-").replace(/'/g, "")
+                        :countryCapitals[countryName].trim().replace(/ /g, "-").replace(/'/g, ""));
     if (appleProduct == false) {
         if (stateIsShowing) // set the Country Weather Link: Trim and Replace space with "-"
         {
             document.getElementById("info_Weather").href = "https://www.timeanddate.com/weather/usa/" +
-                (timeDateOrWeather[featuresOfEachCountry[14]['value']]?timeDateOrWeather[featuresOfEachCountry[14]['value']]:featuresOfEachCountry[14]['value'].trim().replace(/ /g, "-"));
+                (timeDateOrWeather[countryCapitals[countryName]]?timeDateOrWeather[countryCapitals[countryName]]:countryCapitals[countryName]
+                    .trim().replace(/ /g, "-"));
         }
         else if (timeDateOrWeatherSmallEntities[countryName])
         {
@@ -1273,9 +1320,9 @@ function setCountryTimeDateWeatherValues(countryName, featuresOfEachCountry)
         }
         else document.getElementById("info_Weather").href = "https://www.timeanddate.com/weather/" +
                 (timeDateOrWeather[countryName]?timeDateOrWeather[countryName]:countryName) + "/" +
-                    (timeDateOrWeather[featuresOfEachCountry[14]['value']]
-                        ?timeDateOrWeather[featuresOfEachCountry[14]['value']].trim().replace(/ /g, "-").replace(/'/g, "")
-                            :featuresOfEachCountry[14]['value'].trim().replace(/ /g, "-").replace(/'/g, ""));
+                    (timeDateOrWeather[countryCapitals[countryName]]
+                        ?timeDateOrWeather[countryCapitals[countryName]].trim().replace(/ /g, "-").replace(/'/g, "")
+                            :countryCapitals[countryName].trim().replace(/ /g, "-").replace(/'/g, ""));
     }
 }
 

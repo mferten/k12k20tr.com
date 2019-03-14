@@ -21,6 +21,8 @@ function createAtoZTags(eWorldCountriesAlphabetLetters) {
     // console.log(eWorldCountriesAlphabetLetters.innerHTML); // new aToZObject
 }
 
+var threeBelongsToOthers = {"UnitedStatesMinorOutlyingIslands":"UnitedStatesofAmerica",
+    "HeardIslandandMcDonaldIslands":"Australia", "BouvetIsland":"Norway" };
 
 // SELECT concat('"', long_name, '",') FROM countries order by long_name;
 var incompleteDBSortedLongNameSortedCountries = ["ABD Minor Outlying Adaları",
@@ -1211,7 +1213,7 @@ var countryFromISOLongName = { "American Samoa":"AmericanSamoa", "Antarctic Trea
         "Iran":"Iran (Islamic Republic of)", "Laos":"Lao People's Democratic Republic (the)", "Macedonia":"Macedonia (the former Yugoslav Republic of)", "Reunion":"Réunion",
         "Micronesia":"Micronesia (Federated States of)", "Moldova":"Moldova (the Republic of)", "Netherlands":"Netherlands (the)", "Niger":"Niger (the)", "Philippines":"Philippines (the)",
         "SouthGeorgiaAndSouthSandwichIslands":"South Georgia and the South Sandwich Islands", "UnitedStatesMinorOutlyingIslands":"United States Minor Outlying Islands (the)" }
-
+    // this should be countryCodesOfAllCountriesSortedByNativeLongNames
     var countryCodesOfAllCountriesSortedByTurkishLongNames = {}; // sorted already since fullNameForCountry is sorted by long_name...
     for (var oneCountryFull in fullNameForCountry) { console.log(oneCountryFull);
         if (ISOLongNameFromCountryName[oneCountryFull]) countryCodesOfAllCountriesSortedByTurkishLongNames[oneCountryFull] =
