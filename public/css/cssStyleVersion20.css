@@ -275,6 +275,15 @@ li a:hover {
 
 /* drop down menu and show right/left description end */
 
+.borderImage {
+    border: .3rem solid transparent;
+    padding: .9rem;
+    -webkit-border-image: url(/images/border.png) 15 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(/images/border.png) 15 stretch; /* Opera 11-12.1 */
+    border-image: url(/images/border.png) 15 stretch;
+    margin: 0 33%;
+}
+
 .marginOnSidesABit {
     margin: 0 .3rem;
 }
