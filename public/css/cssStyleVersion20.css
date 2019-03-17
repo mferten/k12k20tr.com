@@ -281,7 +281,7 @@ li a:hover {
     -webkit-border-image: url(/images/border.png) 15 stretch; /* Safari 3.1-5 */
     -o-border-image: url(/images/border.png) 15 stretch; /* Opera 11-12.1 */
     border-image: url(/images/border.png) 15 stretch;
-    margin: 0 33%;
+    margin: 0 38%;
 }
 
 .marginOnSidesABit {
