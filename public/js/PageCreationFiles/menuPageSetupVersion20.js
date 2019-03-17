@@ -57,7 +57,7 @@ function setMenuImage(firstTime) {
 
     var menuImageCaption = document.createElement("figcaption");
     menuImageCaption.setAttribute("class","borderImage");
-    menuImageCaption.innerHTML = "Örnek: Doğal Çiftlik Hanı Bilgisayar Şirketi";
+    menuImageCaption.innerHTML = "Örnek: Bilgisayar Şirketli Doğal Çiftlik Hanı";
     menuMain.appendChild(menuImageCaption);
 
     var menuImage = document.createElement("img");
