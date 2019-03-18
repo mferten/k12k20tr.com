@@ -116,9 +116,17 @@ function finalizeGlobalPage() {
     setCombineValueCodes();
     // create SimpleMaps World Map
     worldMap = simplemaps_worldmap.create();
-    regionalGlobalInitialization();
-    // only one region in World view map: 0, all countries in it
-    worldMap.load();
+    if (navigator.userAgent.indexOf("Chrome") == -1) {
+        worldMap.load(); // Firefox takes long time to load the flags into the maps
+        setTimeout(function () {
+            regionalGlobalInitialization();
+        }, 50);
+    }
+    else {
+        regionalGlobalInitialization(); // Chrome is fast enough to show almost intantly...
+        // only one region in World view map: 0, all countries in it
+        worldMap.load();
+    }
     setNavFooterTags("Searching");
     if (appleProduct)
         countrySelectableFeatureLocation = countrySelectableFeatureLocationApple; // Apple IOS less criteria
