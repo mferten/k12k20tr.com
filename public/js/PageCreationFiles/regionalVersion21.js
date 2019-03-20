@@ -6,14 +6,14 @@ dashBoardFlag = false;
 removeAnExternalJSFileIfExist("DashBoardmapdata");
 // retrieve the external js files if not open yet
 setTimeout(function () {
-    importAnExternalUtilityJSFile("AfricaFlags", "js/OneCountryLanguageTextJSFiles/africaFlagsVersion20.js");
-    importAnExternalUtilityJSFile("AsiaFlags", "js/OneCountryLanguageTextJSFiles/asiaFlagsVersion20.js");
-    importAnExternalUtilityJSFile("EuropeFlags", "js/OneCountryLanguageTextJSFiles/europeFlagsVersion20.js");
-    importAnExternalUtilityJSFile("NaFlags", "js/OneCountryLanguageTextJSFiles/naFlagsVersion20.js");
-    importAnExternalUtilityJSFile("OceaniaFlags", "js/OneCountryLanguageTextJSFiles/oceaniaFlagsVersion20.js");
-    importAnExternalUtilityJSFile("Mapdata", "js/mapdata.js");
-    importAnExternalUtilityJSFile("Worldmap", "js/worldmap.js");
-    importAnExternalUtilityJSFile("SaFlags", "js/OneCountryLanguageTextJSFiles/saFlagsVersion20.js");
+    importAnExternalJSFile("AfricaFlags", "js/OneCountryLanguageTextJSFiles/africaFlagsVersion21.js");
+    importAnExternalJSFile("AsiaFlags", "js/OneCountryLanguageTextJSFiles/asiaFlagsVersion21.js");
+    importAnExternalJSFile("EuropeFlags", "js/OneCountryLanguageTextJSFiles/europeFlagsVersion21.js");
+    importAnExternalJSFile("NaFlags", "js/OneCountryLanguageTextJSFiles/naFlagsVersion21.js");
+    importAnExternalJSFile("OceaniaFlags", "js/OneCountryLanguageTextJSFiles/oceaniaFlagsVersion21.js");
+    importAnExternalJSFile("Mapdata", "js/mapdata.js");
+    importAnExternalJSFile("Worldmap", "js/worldmap.js");
+    importAnExternalJSFile("SaFlags", "js/OneCountryLanguageTextJSFiles/saFlagsVersion21.js");
 
     initializationUtilityForFlags();
 }, 50);
@@ -53,19 +53,9 @@ regionMain.setAttribute("class","myInfoPage");
 regionBody.appendChild(regionHeader); // must be here for setTheRegionFlags to work...
 regionBody.appendChild(regionMain); // must be here for simplemaps
 
-var regionNav = document.createElement("nav");
-regionNav.setAttribute("id", "id_Navigation");
-regionNav.setAttribute("class", "center");
-regionNav.setAttribute("data-nav", "Surfing");
+var regionNav = setNavigation("Surfing");
 
-var regionFooter = document.createElement("footer");
-regionFooter.setAttribute("class","center");
-var regionFooterP = document.createElement("p");
-regionFooterP.setAttribute("id","id_CopyRight");
-var regionFooterP2 = document.createElement("p");
-regionFooterP2.setAttribute("id","id_LanguageImplementedBy");
-regionFooter.appendChild(regionFooterP);
-regionFooter.appendChild(regionFooterP2);
+var regionFooter = setFooter();
 
 regionBody.appendChild(regionNav);
 regionBody.appendChild(regionFooter);

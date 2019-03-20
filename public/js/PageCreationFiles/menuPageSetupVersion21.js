@@ -2,10 +2,10 @@
 
 var currentEWorldPage = "Menu"; // this should be up here all the time to work again from the menu (after the first time)
 
-importAnExternalUtilityJSFile("UtilityForAll", "js/utilityForAllVersion20.js");
-importAnExternalUtilityJSFile("UtilityForFlag", "js/utilityForFlagsVersion20.js");
-importAnExternalUtilityJSFile("WorldFlags", "js/OneCountryLanguageTextJSFiles/worldFlagsVersion20.js");
-importAnExternalUtilityJSFile("SVGFiles", "js/OneCountryLanguageTextJSFiles/flagsSVGFilesVersion20.js");
+importAnExternalJSFile("UtilityForAll", "js/utilityForAllVersion21.js");
+importAnExternalJSFile("UtilityForFlag", "js/utilityForFlagsVersion21.js");
+importAnExternalJSFile("WorldFlags", "js/OneCountryLanguageTextJSFiles/worldFlagsVersion21.js");
+importAnExternalJSFile("SVGFiles", "js/OneCountryLanguageTextJSFiles/flagsSVGFilesVersion21.js");
 
 function finalizeMenuPage() {
 
@@ -28,6 +28,7 @@ function finalizeMenuPage() {
 function setMenuImage(firstTime) {
     var menuBody = document.createElement("body");
     menuBody.setAttribute("name","menu");
+
     var menuHeader = document.createElement("header");
     menuHeader.setAttribute("id","id_Header");
     menuHeader.setAttribute("class","center");
@@ -39,25 +40,18 @@ function setMenuImage(firstTime) {
     addApplicationLanguageSelectionDropDownBox(menuH2);
     menuHeader.appendChild(menuH1);
     menuHeader.appendChild(menuH2);
+
     var menuMain = document.createElement("main");
     menuMain.setAttribute("id","mainBody");
     menuMain.setAttribute("class","center");
-    var menuNav = document.createElement("nav");
-    menuNav.setAttribute("id","id_Navigation");
-    menuNav.setAttribute("data-nav","menu");
-    menuNav.setAttribute("class","center");
-    var menuFooter = document.createElement("footer");
-    menuFooter.setAttribute("class","center");
-    var menuFooterP = document.createElement("p");
-    menuFooterP.setAttribute("id","id_CopyRight");
-    var menuFooterP2 = document.createElement("p");
-    menuFooterP2.setAttribute("id","id_LanguageImplementedBy");
-    menuFooter.appendChild(menuFooterP);
-    menuFooter.appendChild(menuFooterP2);
 
-    var menuImageCaption = document.createElement("figcaption");
+    var menuNav = setNavigation("menu");
+
+    var menuFooter = setFooter();
+
+    var menuImageCaption = document.createElement("figcaption"); // this is not re-used/used in any other page
     menuImageCaption.setAttribute("class","borderImage");
-    menuImageCaption.innerHTML = "Örnek: Bilgisayar Şirketli Doğal Çiftlik Hanı";
+    menuImageCaption.innerHTML = "Prototyping a Web Company within an Organic Farm Inn";
     menuMain.appendChild(menuImageCaption);
 
     var menuImage = document.createElement("img");
@@ -80,9 +74,10 @@ function setMenuImage(firstTime) {
   }, 100);
 }
 
-function importAnExternalUtilityJSFile(jsFileName, jsURL)
+function importAnExternalJSFile(jsFileName, jsURL)
 {
     var ifExternalJSExist = document.getElementById("id_" + jsFileName + "Script");
+
     if (ifExternalJSExist) {
         if (currentEWorldPage == "eWorld Global" && jsFileName == 'Worldmap') { // onload: loaded but not ready: weird
             setTimeout(function() {

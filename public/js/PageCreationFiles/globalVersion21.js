@@ -6,8 +6,8 @@ dashBoardFlag = true;
 removeAnExternalJSFileIfExist("Mapdata"); // only conflicting JS file with other Mapdata
 // retrieve the external js files if not open yet
 setTimeout(function () {
-    importAnExternalUtilityJSFile("DashBoardmapdata", "js/dashBoardmapdata.js");
-    importAnExternalUtilityJSFile("Worldmap", "js/worldmap.js");
+    importAnExternalJSFile("DashBoardmapdata", "js/dashBoardmapdata.js");
+    importAnExternalJSFile("Worldmap", "js/worldmap.js");
 
     initializationUtilityForFlags();
 }, 50);
@@ -46,19 +46,9 @@ setTimeout(function () {
     globalBody.appendChild(globalHeader); // must be here for setTheRegionFlags to work...
     globalBody.appendChild(globalMain); // must be here for simplemaps
 
-    var globalNav = document.createElement("nav");
-    globalNav.setAttribute("id", "id_Navigation");
-    globalNav.setAttribute("class", "center");
-    globalNav.setAttribute("data-nav", "Searching");
+    var globalNav = setNavigation("Searching");
 
-    var globalFooter = document.createElement("footer");
-    globalFooter.setAttribute("class","center");
-    var globalFooterP = document.createElement("p");
-    globalFooterP.setAttribute("id","id_CopyRight");
-    var globalFooterP2 = document.createElement("p");
-    globalFooterP2.setAttribute("id","id_LanguageImplementedBy");
-    globalFooter.appendChild(globalFooterP);
-    globalFooter.appendChild(globalFooterP2);
+    var globalFooter = setFooter();
 
     globalBody.appendChild(globalNav);
     globalBody.appendChild(globalFooter);

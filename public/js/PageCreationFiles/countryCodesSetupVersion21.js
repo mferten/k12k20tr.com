@@ -3,8 +3,8 @@
 currentEWorldPage = "eWorld Countries"; // this should be up here all the time to work again from the menu (after the first time)
 
 // retrieve the external js files if not open yet
-importAnExternalUtilityJSFile("CountriesTableData", "js/OneCountryLanguageTextJSFiles/countriesTableDataVersion20.js");
-// importAnExternalUtilityJSFile("ConversionHelper", "js/OneCountryLanguageTextJSFiles/languageConversionHelperVersion20.js");
+importAnExternalJSFile("CountriesTableData", "js/OneCountryLanguageTextJSFiles/countriesTableDataVersion21.js");
+// importAnExternalJSFile("ConversionHelper", "js/OneCountryLanguageTextJSFiles/languageConversionHelperVersion21.js");
 
 initializationUtilityForFlags();
 
@@ -81,24 +81,16 @@ setTimeout(function () {
 
     eWorldCountriesBody.appendChild(eWorldCountriesHeader);
 
-    var eWorldCountriesNav = document.createElement("nav");
-    eWorldCountriesNav.setAttribute("id", "id_Navigation");
-    eWorldCountriesNav.setAttribute("class", "center");
-    eWorldCountriesNav.setAttribute("data-nav", "CountryCodes");
+    var eWorldCountriesNav = setNavigation("CountryCodes");
 
-    var eWorldCountriesFooter = document.createElement("footer");
-    eWorldCountriesFooter.setAttribute("class","center");
-    var eWorldCountriesFooterP = document.createElement("p");
-    eWorldCountriesFooterP.setAttribute("id","id_CopyRight");
-    var eWorldCountriesFooterP2 = document.createElement("p");
-    eWorldCountriesFooterP2.setAttribute("id","id_LanguageImplementedBy");
-    eWorldCountriesFooter.appendChild(eWorldCountriesFooterP);
-    eWorldCountriesFooter.appendChild(eWorldCountriesFooterP2);
+    var eWorldCountriesFooter = setFooter();
 
-    eWorldCountriesBody.appendChild(eWorldCountriesMain);
-    eWorldCountriesBody.appendChild(eWorldCountriesNav);
-    eWorldCountriesBody.appendChild(eWorldCountriesFooter);
-}, 50);
+    setTimeout(function() {
+        eWorldCountriesBody.appendChild(eWorldCountriesMain);
+        eWorldCountriesBody.appendChild(eWorldCountriesNav);
+        eWorldCountriesBody.appendChild(eWorldCountriesFooter);
+    }, 50);
+}, 75);
 
 var processTheseTH = {0:true,1:true,2:true,4:true,5:true,6:true};
 var currentLetter = myUndefined;
