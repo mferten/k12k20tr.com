@@ -10,6 +10,7 @@ setTimeout(function () {
     importAnExternalJSFile("Worldmap", "js/worldmap.js");
 
     initializationUtilityForFlags();
+    resetAllSelectionAndDataSets(); // reset the previous selections...
 }, 50);
 
 var globalBody =  document.createElement("body");

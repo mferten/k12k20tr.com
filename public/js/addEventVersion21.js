@@ -198,6 +198,15 @@ function runDropDownSelection(selectionId, selectionValue)
     }
 }
 
+function resetAllSelectionAndDataSets() {
+    for (let oneCriteria in searchedSelectFields) {
+        searchedSelectFields[oneCriteria] = false; // Flagged as Not Selected Yet
+    }
+    for (let oneCriteria in searchedSelectFieldsFilteredCountries) {
+        searchedSelectFieldsFilteredCountries[oneCriteria] = ""; // No more selected Countries Data
+    }
+}
+
 function initializeSelectedCriteria(selectedCriteria, resetFlag)
 {
     if (resetFlag)

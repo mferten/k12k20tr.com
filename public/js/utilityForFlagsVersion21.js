@@ -180,7 +180,7 @@ var randDCode = ["0.1,0.5","0.6,1","1.1,1.5","1.6,2","2.1,2.5","2.6,3","3.1,3.5"
 
 var randDOptionTexts = ["0.1 - 0.5","0.6 - 1","1.1 - 1.5","1.6 - 2","2.1 - 2.5","2.6 - 3","3.1 - 3.5","3.6 - 4","4.1 - 6","6.1 - 10","10.1 - 100"];
 
-var drivingSideCode = ["Right", "Left"];
+var drivingSideCode = ["Sağ", "Sol"];
 var drivingSideOptionTexts = ["Right", "Left"];
 
 var reportsCode = ["Basics"];
