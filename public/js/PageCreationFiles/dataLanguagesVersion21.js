@@ -1,7 +1,7 @@
 'use strict';
 
 
-importAnExternalUtilityJSFile("ConversionHelper", "js/OneCountryLanguageTextJSFiles/languageConversionHelperVersion21.js");
+importAnExternalJSFile("ConversionHelper", "js/OneCountryLanguageTextJSFiles/languageConversionHelperVersion21.js");
 
 // Application (Page) Name
 currentEWorldPage = "Data Languages";
@@ -352,7 +352,7 @@ function newLanguageCodeTextGeneration(tagsTextsArray) {
     // create World View Flags
     recreateTheFlagsWithNewCountry(false);
 
-    setApplicationLanguage(3); // get a language Application Text: 1=USA(English) 2=Turkey(Turkish) 3=Slovakia(Slovak) ...
+    setApplicationLanguage(2); // get a language Application Text: 1=USA(English) 2=Turkey(Turkish) 3=Slovakia(Slovak) ...
     // console.log(encodeURIComponent(DEFAULTREGIONAPPLICATIONLANGUAGETEXT));
 
     var englishToSelectedLanguageJSONObject = {};
@@ -416,7 +416,7 @@ function convertTheRestFeaturesOfAllCountries(englishToSelectedLanguageJSONObjec
         }
     }
     convertTheComments(englishToSelectedLanguageJSONObject);
-    //console.log(JSON.stringify(featuresOfAllCountries));
+    console.log(JSON.stringify(featuresOfAllCountries));
 }
 
 function convertTheComments(englishToSelectedLanguageJSONObject) {
