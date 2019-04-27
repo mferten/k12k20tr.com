@@ -15,13 +15,13 @@
         <meta name="keywords" content="K12K20.com: SVG Maps & Flags RCP -SPA">
         <meta name="author" content="MFE Mehmet Fatih Erten">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <title>K12K20.com: World SVG Maps & Flags: RCP - SPA</title>
+        <title>Dünyamızı Tanıyalım, Türkiye'yi Tanıtalım</title>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/cssStyleVersion21.css">
         <script src="js/OneCountryLanguageTextJSFiles/defaultStartupRegionValuesVersion21.js"></script>
         <script src="js/OneCountryLanguageTextJSFiles/staticDataForDashboardVersion21.js"></script>
-        <script src="js/OneCountryLanguageTextJSFiles/languageConfigurationHelperVersion21.js"></script>        
+        <script src="js/OneCountryLanguageTextJSFiles/languageConfigurationHelperVersion21.js"></script>
         <script src="js/PageCreationFiles/menuPageSetupVersion21.js"></script>
         <script src="js/PageCreationFiles/navigationVersion21.js"></script>
         <script src="js/addEventVersion21.js"></script>
