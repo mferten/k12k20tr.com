@@ -51,4 +51,4 @@ var sixRegionsValues = [  // 0: North America 1: South America 2: Europe 3: Afri
 // Europe region countries
 var DEFAULTREGIONFLAGOFCOUNTRIES = sixRegionsValues[2];
 
-var TARGETEDENTITY = "İnternet Şirketli Doğal Çiftlik Hanı";
+var TARGETEDENTITY = "Bilimsel Doğal Çiftlik Hanı";
